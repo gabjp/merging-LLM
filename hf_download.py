@@ -8,7 +8,7 @@ def main():
     parser.add_argument("--model-id", type=str, default="")
     args = parser.parse_args()
 
-    tokenizer = AutoTokenizer.from_pretrained(args.model_id)
+    tokenizer = AutoTokenizer.from_pretrained(args.model_id, use_fast=False)
     model = AutoModelForCausalLM.from_pretrained(args.model_id)
 
     if not os.path.exists(args.save_path):
