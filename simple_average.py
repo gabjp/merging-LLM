@@ -16,8 +16,8 @@ def main():
     tokenizer2 = AutoTokenizer.from_pretrained(args.m2, use_fast=False)
     model2 = AutoModelForCausalLM.from_pretrained(args.m2)
 
-    sd1 = model1.state_dict().keys()
-    sd2 = model2.state_dict().keys()
+    sd1 = model1.state_dict()
+    sd2 = model2.state_dict()
 
     print("loaded")
 
