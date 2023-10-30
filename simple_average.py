@@ -7,7 +7,7 @@ def main():
     parser.add_argument("--save-path", type=str, default="")
     parser.add_argument("--m1", type=str, default="")
     parser.add_argument("--m2", type=str, default="")
-    parser.add_argument("--p", type=float, defailt=0.5)
+    parser.add_argument("--p", type=float, default=0.5)
     args = parser.parse_args()
 
     tokenizer1 = AutoTokenizer.from_pretrained(args.m1, use_fast=False)
