@@ -21,6 +21,10 @@ def main():
 
     print("loaded")
 
+    for key in sd1.keys():
+        if sd1[key].size() != sd2[key].size():
+            print(key, sd1[key].size(), sd2[key].size())
+
     sd = {key : (sd1[key]/2 + sd2[key]/2) for key in sd1.keys()}
 
     print("merged")
