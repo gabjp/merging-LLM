@@ -16,14 +16,22 @@ def main():
     tokenizer2 = AutoTokenizer.from_pretrained(args.m2, use_fast=False)
     model2 = AutoModelForCausalLM.from_pretrained(args.m2)
 
-    print(model1.state_dict().keys())
-    print(model2.state_dict().keys())
+    sd1 = model1.state_dict().keys()
+    sd2 = model2.state_dict().keys()
 
-    #if not os.path.exists(args.save_path):
-    #    os.makedirs(args.save_path)
+    print("loaded")
+
+    sd = {key : (sd1[key]/2 + sd2[key]/2) for key in sd1.keys()}
+
+    print("merged")
+
+    if not os.path.exists(args.save_path):
+        os.makedirs(args.save_path)
+
+    model1.load_state_dict(sd)
     
-    #tokenizer.save_pretrained(args.save_path)
-    #model.save_pretrained(args.save_path)
+    tokenizer1.save_pretrained(args.save_path)
+    model1.save_pretrained(args.save_path)
 
 
 
