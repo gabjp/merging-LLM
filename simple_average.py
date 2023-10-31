@@ -25,8 +25,8 @@ def main():
         if sd1[key].size() != sd2[key].size():
             print(key, sd1[key].size(), sd2[key].size())
 
-    print(len(tokenizer1.get_vocab()))
-    print(len(tokenizer2.get_vocab()))
+    print((tokenizer1.get_vocab()))
+    print((tokenizer2.get_vocab()))
 
     sd = {key : (sd1[key]/2 + sd2[key]/2) for key in sd1.keys()}
 
