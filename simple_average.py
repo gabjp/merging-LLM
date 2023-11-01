@@ -30,9 +30,9 @@ def main():
     print("loaded")
 
     print(get_embeddings( model1, tokenizer1, "the"))
-    print(sd1["model.embed_tokens.weight"])[[1,278]:]
+    print(sd1["model.embed_tokens.weight"][[1,278]:])
     print(get_embeddings( model2, tokenizer2, "the"))
-    print(sd2["model.embed_tokens.weight"])[[1,278]:]
+    print(sd2["model.embed_tokens.weight"][[1,278]:])
 
     sd = {key : (sd1[key]/2 + sd2[key]/2) for key in sd1.keys()}
 
