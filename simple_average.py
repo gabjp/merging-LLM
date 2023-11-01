@@ -2,13 +2,7 @@ import argparse
 from transformers import AutoTokenizer,AutoModelForCausalLM
 import os 
 import torch
-
-def get_embeddings(model, tokenizer, prompt):
-    input_ids = tokenizer(prompt).input_ids
-    print(input_ids)
-    input_embeddings = model.get_input_embeddings()
-    embeddings = input_embeddings(torch.LongTensor([input_ids]))
-    return embeddings
+import random
 
 def main():
     parser = argparse.ArgumentParser()
@@ -29,10 +23,28 @@ def main():
 
     print("loaded")
 
-    print(get_embeddings( model1, tokenizer1, "the"))
-    print(sd1["model.embed_tokens.weight"][[1,278],:])
-    print(get_embeddings( model2, tokenizer2, "the"))
-    print(sd2["model.embed_tokens.weight"][[1,278],:])
+
+    t1 = sd1["model.embed_tokens.weight"]
+    t2 = sd2["model.embed_tokens.weight"][0:3200,:]
+
+    norms = torch.norm(t1-t2, dim=1)
+    print("average distance between model embeddings")
+    print(torch.mean(norms))
+
+    combinations = random.shuffle([(i,j) for i in range(3200) for j in range(i+1, 3200)])[0:3200]
+    id1 = [elem[0] for elem in combinations]
+    id2 = [elem[1] for elem in combinations]
+
+    norms = torch.norm(t1[id1]-t1[id2], dim=1)
+    print("average distance between embeddings of model 1")
+    print(torch.mean(norms))
+
+    norms = torch.norm(t2[id1]-t2[id2], dim=1)
+    print("average distance between embeddings of model 2")
+    print(torch.mean(norms))
+
+    return 
+
 
     sd = {key : (sd1[key]/2 + sd2[key]/2) for key in sd1.keys()}
 
