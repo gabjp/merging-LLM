@@ -31,7 +31,8 @@ def main():
     print("average distance between model embeddings")
     print(torch.mean(norms))
 
-    combinations = random.shuffle([(i,j) for i in range(32000) for j in range(i+1, 32000)])[0:32000]
+    combinations = random.shuffle([(i,j) for i in range(32000) for j in range(i+1, 32000)])
+    combinations = combinations[0:32000]
     id1 = [elem[0] for elem in combinations]
     id2 = [elem[1] for elem in combinations]
 
