@@ -1,6 +1,14 @@
 import argparse
 from transformers import AutoTokenizer,AutoModelForCausalLM
 import os 
+import torch
+
+def get_embeddings(model, tokenizer, prompt):
+    input_ids = tokenizer(prompt).input_ids
+    print(input_ids)
+    input_embeddings = model.get_input_embeddings()
+    embeddings = input_embeddings(torch.LongTensor([input_ids]))
+    return embeddings
 
 def main():
     parser = argparse.ArgumentParser()
@@ -21,12 +29,8 @@ def main():
 
     print("loaded")
 
-    for key in sd1.keys():
-        if sd1[key].size() != sd2[key].size():
-            print(key, sd1[key].size(), sd2[key].size())
-
-    print((tokenizer1.get_vocab()))
-    print((tokenizer2.get_vocab()))
+    print(get_embeddings( model1, tokenizer1, "the"))
+    print(get_embeddings( model2, tokenizer2, "the"))
 
     sd = {key : (sd1[key]/2 + sd2[key]/2) for key in sd1.keys()}
 
