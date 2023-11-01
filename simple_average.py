@@ -25,13 +25,13 @@ def main():
 
 
     t1 = sd1["model.embed_tokens.weight"]
-    t2 = sd2["model.embed_tokens.weight"][0:3200,:]
+    t2 = sd2["model.embed_tokens.weight"][0:32000,:]
 
     norms = torch.norm(t1-t2, dim=1)
     print("average distance between model embeddings")
     print(torch.mean(norms))
 
-    combinations = random.shuffle([(i,j) for i in range(3200) for j in range(i+1, 3200)])[0:3200]
+    combinations = random.shuffle([(i,j) for i in range(32000) for j in range(i+1, 32000)])[0:32000]
     id1 = [elem[0] for elem in combinations]
     id2 = [elem[1] for elem in combinations]
 
