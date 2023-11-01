@@ -23,6 +23,13 @@ def main():
 
     print("loaded")
 
+    v1 = tokenizer1.get_vocab()
+    v2 = tokenizer2.get_vocab()
+
+    for key in v1.keys():
+        if v1[key] != v2[key]: print("wrong", key)
+    
+    return
 
     t1 = sd1["model.embed_tokens.weight"]
     t2 = sd2["model.embed_tokens.weight"][0:32000,:]
