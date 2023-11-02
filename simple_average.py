@@ -47,9 +47,6 @@ def main():
                 sd2[key].mul_(1-args.p)
                 sd1[key].add_(sd2[key])
 
-            
-            
-
 
     # drop and merge
 
@@ -58,14 +55,17 @@ def main():
         for key in keys:
             print(key, flush=True)
             if key == "model.embed_tokens.weight":
-                sd[key] = sd1[key] * (args.p) + sd2[key][0:32000,:] * (1-args.p)
+                sd1[key].mul_(args.p)
+                sd2[key].mul_(1-args.p)
+                sd1[key].add_(sd2[key][0:32000,:])
             elif key == "lm_head.weight":
-                sd[key] = sd1[key] * (args.p) + sd2[key][0:32000,:] * (1-args.p)
+                sd1[key].mul_(args.p)
+                sd2[key].mul_(1-args.p)
+                sd1[key].add_(sd2[key][0:32000,:])
             else:
-                sd[key] = sd1[key] * (args.p) + sd2[key][0:32000,:] * (1-args.p)
-            
-            del sd2[key]
-            del sd1[key]
+                sd1[key].mul_(args.p)
+                sd2[key].mul_(1-args.p)
+                sd1[key].add_(sd2[key])
 
 
 
