@@ -24,35 +24,41 @@ def main():
 
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
-    print("merging")
+    print("merging", flush=True)
+
+    sd = {}
 
     # Use vicuna
 
     if args.merge_embeddings == 0:
 
         for key in sd1.keys():
+            print(key, flush=True)
             if key == "model.embed_tokens.weight":
-                sd1[key] = sd1[key]
+                sd[key] = sd1[key]
             elif key == "lm_head.weight":
-                sd1[key] = sd1[key]
+                sd[key] = sd1[key]
             else:
-                sd1[key] = sd1[key] * (args.p) + sd2[key] * (1-args.p)
+                sd[key] = sd1[key] * (args.p) + sd2[key] * (1-args.p)
 
             del sd2[key]
+            del sd1[key]
 
     # drop and merge
 
     else:
 
         for key in sd1.keys():
+            print(key, flush=True)
             if key == "model.embed_tokens.weight":
-                sd1[key] = sd1[key] * (args.p) + sd2[key][0:32000,:] * (1-args.p)
+                sd[key] = sd1[key] * (args.p) + sd2[key][0:32000,:] * (1-args.p)
             elif key == "lm_head.weight":
-                sd1[key] = sd1[key] * (args.p) + sd2[key][0:32000,:] * (1-args.p)
+                sd[key] = sd1[key] * (args.p) + sd2[key][0:32000,:] * (1-args.p)
             else:
-                sd1[key] = sd1[key] * (args.p) + sd2[key][0:32000,:] * (1-args.p)
+                sd[key] = sd1[key] * (args.p) + sd2[key][0:32000,:] * (1-args.p)
             
             del sd2[key]
+            del sd1[key]
 
 
 
