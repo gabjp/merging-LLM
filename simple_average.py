@@ -28,11 +28,13 @@ def main():
 
     sd = {}
 
+    keys = list(sd1.keys())
+
     # Use vicuna
 
     if args.merge_embeddings == 0:
 
-        for key in sd1.keys():
+        for key in keys:
             print(key, flush=True)
             if key == "model.embed_tokens.weight":
                 sd[key] = sd1[key]
@@ -48,7 +50,7 @@ def main():
 
     else:
 
-        for key in sd1.keys():
+        for key in keys:
             print(key, flush=True)
             if key == "model.embed_tokens.weight":
                 sd[key] = sd1[key] * (args.p) + sd2[key][0:32000,:] * (1-args.p)
