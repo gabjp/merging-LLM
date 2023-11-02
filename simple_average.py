@@ -36,7 +36,9 @@ def main():
             elif key == "lm_head.weight":
                 sd1[key] = sd1[key]
             else:
-                sd1[key] = sd1[key].to(device) * (args.p) + sd2[key].to(device) * (1-args.p)
+                sd1[key] = sd1[key] * (args.p) + sd2[key] * (1-args.p)
+
+            del sd2[key]
 
     # drop and merge
 
@@ -44,11 +46,14 @@ def main():
 
         for key in sd1.keys():
             if key == "model.embed_tokens.weight":
-                sd1[key] = sd1[key].to(device) * (args.p) + sd2[key][0:32000,:].to(device) * (1-args.p)
+                sd1[key] = sd1[key] * (args.p) + sd2[key][0:32000,:] * (1-args.p)
             elif key == "lm_head.weight":
-                sd1[key] = sd1[key].to(device) * (args.p) + sd2[key][0:32000,:].to(device) * (1-args.p)
+                sd1[key] = sd1[key] * (args.p) + sd2[key][0:32000,:] * (1-args.p)
             else:
-                sd1[key] = sd1[key].to(device) * (args.p) + sd2[key][0:32000,:].to(device) * (1-args.p)
+                sd1[key] = sd1[key] * (args.p) + sd2[key][0:32000,:] * (1-args.p)
+            
+            del sd2[key]
+
 
 
     print("merged")
