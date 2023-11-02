@@ -3,6 +3,7 @@ from transformers import AutoTokenizer,AutoModelForCausalLM
 import os 
 import torch
 import random
+import gc
 
 def main():
     parser = argparse.ArgumentParser()
@@ -29,6 +30,7 @@ def main():
     sd = {}
 
     keys = list(sd1.keys())
+    print(keys)
 
     # Use vicuna
 
@@ -49,6 +51,8 @@ def main():
 
             del sd2[key]
             del sd1[key]
+            collected = gc.collect()
+            print("Garbage collector: collected %d objects." % (collected))
 
     # drop and merge
 
