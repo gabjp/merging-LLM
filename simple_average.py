@@ -22,6 +22,8 @@ def main():
     sd1 = model1.state_dict()
     sd2 = model2.state_dict()
 
+    device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+
     print("merging")
 
     # Use vicuna
@@ -34,7 +36,7 @@ def main():
             elif key == "lm_head.weight":
                 sd1[key] = sd1[key]
             else:
-                sd1[key] = sd1[key] * (args.p) + sd2[key] * (1-args.p)
+                sd1[key] = sd1[key].to(device) * (args.p) + sd2[key].to(device) * (1-args.p)
 
     # drop and merge
 
@@ -42,11 +44,11 @@ def main():
 
         for key in sd1.keys():
             if key == "model.embed_tokens.weight":
-                sd1[key] = sd1[key] * (args.p) + sd2[key][0:32000,:] * (1-args.p)
+                sd1[key] = sd1[key].to(device) * (args.p) + sd2[key][0:32000,:].to(device) * (1-args.p)
             elif key == "lm_head.weight":
-                sd1[key] = sd1[key] * (args.p) + sd2[key][0:32000,:] * (1-args.p)
+                sd1[key] = sd1[key].to(device) * (args.p) + sd2[key][0:32000,:].to(device) * (1-args.p)
             else:
-                sd1[key] = sd1[key] * (args.p) + sd2[key][0:32000,:] * (1-args.p)
+                sd1[key] = sd1[key].to(device) * (args.p) + sd2[key][0:32000,:].to(device) * (1-args.p)
 
 
     print("merged")
