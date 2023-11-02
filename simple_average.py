@@ -22,7 +22,6 @@ def main():
     sd1 = model1.state_dict()
     sd2 = model2.state_dict()
 
-    sd = {}
     print("merging")
 
     # Use vicuna
@@ -31,11 +30,11 @@ def main():
 
         for key in sd1.keys():
             if key == "model.embed_tokens.weight":
-                sd[key] = sd1[key]
+                sd1[key] = sd1[key]
             elif key == "lm_head.weight":
-                sd[key] = sd1[key]
+                sd1[key] = sd1[key]
             else:
-                sd[key] = sd1[key] * (args.p) + sd2[key] * (1-args.p)
+                sd1[key] = sd1[key] * (args.p) + sd2[key] * (1-args.p)
 
     # drop and merge
 
@@ -43,11 +42,11 @@ def main():
 
         for key in sd1.keys():
             if key == "model.embed_tokens.weight":
-                sd[key] = sd1[key] * (args.p) + sd2[key][0:32000,:] * (1-args.p)
+                sd1[key] = sd1[key] * (args.p) + sd2[key][0:32000,:] * (1-args.p)
             elif key == "lm_head.weight":
-                sd[key] = sd1[key] * (args.p) + sd2[key][0:32000,:] * (1-args.p)
+                sd1[key] = sd1[key] * (args.p) + sd2[key][0:32000,:] * (1-args.p)
             else:
-                sd[key] = sd1[key] * (args.p) + sd2[key][0:32000,:] * (1-args.p)
+                sd1[key] = sd1[key] * (args.p) + sd2[key][0:32000,:] * (1-args.p)
 
 
     print("merged")
@@ -55,7 +54,7 @@ def main():
     if not os.path.exists(args.save_path):
         os.makedirs(args.save_path)
 
-    model1.load_state_dict(sd)
+    model1.load_state_dict(sd1)
     
     tokenizer1.save_pretrained(args.save_path)
     model1.save_pretrained(args.save_path)
