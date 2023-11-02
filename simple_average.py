@@ -10,7 +10,7 @@ def main():
     parser.add_argument("--m1", type=str, default="")
     parser.add_argument("--m2", type=str, default="")
     parser.add_argument("--p", type=float, default=0.5)
-    parser.add_argument("--merge_embeddings", type=int, default=0)
+    parser.add_argument("--merge-embeddings", type=int, default=0)
     args = parser.parse_args()
 
     tokenizer1 = AutoTokenizer.from_pretrained(args.m1, use_fast=False)
@@ -23,6 +23,7 @@ def main():
     sd2 = model2.state_dict()
 
     sd = {}
+    print("merging")
 
     # Use vicuna
 
