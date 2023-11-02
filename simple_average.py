@@ -43,9 +43,9 @@ def main():
             else:
                 sd[key] = sd1[key] * (args.p) + sd2[key] * (1-args.p)
             
-            print(sd1[key])
-            print(sd2[key])
-            print(sd[key])
+            print(sd1[key].dtype)
+            print(sd2[key].dtype)
+            print(sd[key].dtype)
 
             del sd2[key]
             del sd1[key]
