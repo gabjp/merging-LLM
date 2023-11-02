@@ -42,6 +42,10 @@ def main():
                 sd[key] = sd1[key]
             else:
                 sd[key] = sd1[key] * (args.p) + sd2[key] * (1-args.p)
+            
+            print(sd1[key])
+            print(sd2[key])
+            print(sd[key])
 
             del sd2[key]
             del sd1[key]
