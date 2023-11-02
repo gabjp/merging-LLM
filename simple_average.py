@@ -10,6 +10,7 @@ def main():
     parser.add_argument("--m1", type=str, default="")
     parser.add_argument("--m2", type=str, default="")
     parser.add_argument("--p", type=float, default=0.5)
+    parser.add_argument("--merge_embeddings", type=int, default=0)
     args = parser.parse_args()
 
     tokenizer1 = AutoTokenizer.from_pretrained(args.m1, use_fast=False)
@@ -21,41 +22,32 @@ def main():
     sd1 = model1.state_dict()
     sd2 = model2.state_dict()
 
-    print("loaded")
+    sd = {}
 
-    v1 = tokenizer1.get_vocab()
-    v2 = tokenizer2.get_vocab()
+    # Use vicuna
 
-    for key in v1.keys():
-        if v1[key] != v2[key]: print("wrong", key)
-    
-    return
+    if args.merge_embeddings == 0:
 
-    t1 = sd1["model.embed_tokens.weight"]
-    t2 = sd2["model.embed_tokens.weight"][0:32000,:]
+        for key in sd1.keys():
+            if key == "model.embed_tokens.weight":
+                sd[key] = sd1[key]
+            elif key == "lm_head.weight":
+                sd[key] = sd1[key]
+            else:
+                sd[key] = sd1[key] * (args.p) + sd2[key] * (1-args.p)
 
-    norms = torch.norm(t1-t2, dim=1)
-    print("average distance between model embeddings")
-    print(torch.mean(norms))
+    # drop and merge
 
-    combinations = [(i,j) for i in range(32000) for j in range(i+1, 32000)]
-    random.shuffle(combinations)
-    combinations = combinations[0:32000]
-    id1 = [elem[0] for elem in combinations]
-    id2 = [elem[1] for elem in combinations]
+    else:
 
-    norms = torch.norm(t1[id1]-t1[id2], dim=1)
-    print("average distance between embeddings of model 1")
-    print(torch.mean(norms))
+        for key in sd1.keys():
+            if key == "model.embed_tokens.weight":
+                sd[key] = sd1[key] * (args.p) + sd2[key][0:32000,:] * (1-args.p)
+            elif key == "lm_head.weight":
+                sd[key] = sd1[key] * (args.p) + sd2[key][0:32000,:] * (1-args.p)
+            else:
+                sd[key] = sd1[key] * (args.p) + sd2[key][0:32000,:] * (1-args.p)
 
-    norms = torch.norm(t2[id1]-t2[id2], dim=1)
-    print("average distance between embeddings of model 2")
-    print(torch.mean(norms))
-
-    return 
-
-
-    sd = {key : (sd1[key]/2 + sd2[key]/2) for key in sd1.keys()}
 
     print("merged")
 
