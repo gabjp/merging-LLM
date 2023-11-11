@@ -23,8 +23,8 @@ def main():
     embeddings_1 = sd1["model.embed_tokens.weight"]
     embeddings_2 = sd2["model.embed_tokens.weight"]
 
-    print(f"Embedding 1: {embeddings_1.size}")
-    print(f"Embedding 2: {embeddings_2.size}")
+    print(f"Embedding 1: {embeddings_1.size()}")
+    print(f"Embedding 2: {embeddings_2.size()}")
 
     v1 = tokenizer1.get_vocab()
     v2 = tokenizer2.get_vocab()
@@ -39,6 +39,31 @@ def main():
     # Print the differences
     print("Differences between the two vocabs:")
     print(differences)
+
+    #compute distances between models
+
+    t1 = sd1["model.embed_tokens.weight"][0:32000,:]
+    t2 = sd2["model.embed_tokens.weight"][0:32000,:]
+
+    norms = torch.norm(t1-t2, dim=1)
+    print("average distance between model embeddings")
+    print(torch.mean(norms))
+
+    #compute distances inside models
+
+    combinations = [(i,j) for i in range(32000) for j in range(i+1, 32000)]
+    random.shuffle(combinations)
+    combinations = combinations[0:32000]
+    id1 = [elem[0] for elem in combinations]
+    id2 = [elem[1] for elem in combinations]
+
+    norms = torch.norm(t1[id1]-t1[id2], dim=1)
+    print("average distance between embeddings of model 1")
+    print(torch.mean(norms))
+
+    norms = torch.norm(t2[id1]-t2[id2], dim=1)
+    print("average distance between embeddings of model 2")
+    print(torch.mean(norms))
 
 
 
