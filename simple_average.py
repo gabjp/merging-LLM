@@ -20,8 +20,10 @@ def main():
     tokenizer2 = AutoTokenizer.from_pretrained(args.m2, use_fast=False)
     model2 = AutoModelForCausalLM.from_pretrained(args.m2)
 
-    sd1 = model1.state_dict()
-    sd2 = model2.state_dict()
+    sd1 = model1.named_parameters()
+    sd2 = model2.named_parameters()
+
+    print(sd1["model.embed_tokens.weight"])
 
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
@@ -74,7 +76,7 @@ def main():
     if not os.path.exists(args.save_path):
         os.makedirs(args.save_path)
 
-    model1.load_state_dict(sd1)
+    print(model1.named_parameters()["model.embed_tokens.weight"])
     
     tokenizer1.save_pretrained(args.save_path)
     model1.save_pretrained(args.save_path)
