@@ -57,11 +57,11 @@ def main():
             if key == "model.embed_tokens.weight":
                 sd1[key].mul_(args.p)
                 sd2[key].mul_(1-args.p)
-                sd1[key].add_(sd2[key][0:32000,:])
+                sd1[key].add_(sd2[key])
             elif key == "lm_head.weight":
                 sd1[key].mul_(args.p)
                 sd2[key].mul_(1-args.p)
-                sd1[key].add_(sd2[key][0:32000,:])
+                sd1[key].add_(sd2[key])
             else:
                 sd1[key].mul_(args.p)
                 sd2[key].mul_(1-args.p)
