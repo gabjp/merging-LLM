@@ -27,25 +27,22 @@ def main():
 
     print("merging", flush=True)
 
-    sd = {}
-
-    keys = list(sd1.keys())
-    print(keys)
 
     # Use vicuna
 
     if args.merge_embeddings == 0:
+        pass
 
-        for key in keys:
-            print(key, flush=True)
-            if key == "model.embed_tokens.weight":
-                continue
-            elif key == "lm_head.weight":
-                continue
-            else:
-                sd1[key].mul_(args.p)
-                sd2[key].mul_(1-args.p)
-                sd1[key].add_(sd2[key])
+        #for key in keys:
+        #    print(key, flush=True)
+        #    if key == "model.embed_tokens.weight":
+        #        continue
+        #    elif key == "lm_head.weight":
+        #        continue
+        #    else:
+        #        sd1[key].mul_(args.p)
+        #        sd2[key].mul_(1-args.p)
+        #        sd1[key].add_(sd2[key])
 
 
     # drop and merge
