@@ -23,8 +23,6 @@ def main():
     sd1 = model1.named_parameters()
     sd2 = model2.named_parameters()
 
-    print(sd1["model.embed_tokens.weight"])
-
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
     print("merging", flush=True)
@@ -76,7 +74,6 @@ def main():
     if not os.path.exists(args.save_path):
         os.makedirs(args.save_path)
 
-    print(model1.named_parameters()["model.embed_tokens.weight"])
     
     tokenizer1.save_pretrained(args.save_path)
     model1.save_pretrained(args.save_path)
