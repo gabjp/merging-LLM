@@ -52,20 +52,20 @@ def main():
 
     else:
 
-        for key in keys:
-            print(key, flush=True)
-            if key == "model.embed_tokens.weight":
-                sd1[key].mul_(args.p)
-                sd2[key].mul_(1-args.p)
-                sd1[key].add_(sd2[key])
-            elif key == "lm_head.weight":
-                sd1[key].mul_(args.p)
-                sd2[key].mul_(1-args.p)
-                sd1[key].add_(sd2[key])
+        for ((name1,val1),(name2,val2)) in zip(sd1,sd2):
+            if name1 == "model.embed_tokens.weight":
+                print(val1)
+                val1.mul_(args.p)
+                val2.mul_(1-args.p)
+                val1.add_(val2)
+            elif name1 == "lm_head.weight":
+                val1.mul_(args.p)
+                val2.mul_(1-args.p)
+                val1.add_(val2)
             else:
-                sd1[key].mul_(args.p)
-                sd2[key].mul_(1-args.p)
-                sd1[key].add_(sd2[key])
+                val1.mul_(args.p)
+                val2.mul_(1-args.p)
+                val1.add_(val2)
 
 
 
@@ -74,6 +74,11 @@ def main():
     if not os.path.exists(args.save_path):
         os.makedirs(args.save_path)
 
+    for (name1, val1) in model1.named_parameters:
+        if name1 == "model.embed_tokens.weight":
+            print(val1)
+        else:
+            continue
     
     tokenizer1.save_pretrained(args.save_path)
     model1.save_pretrained(args.save_path)
