@@ -17,6 +17,12 @@ def main():
     tokenizer2 = AutoTokenizer.from_pretrained(args.m2, use_fast=False)
     model2 = AutoModelForCausalLM.from_pretrained(args.m2)
 
+    print(tokenizer1.eos_token)
+    print(tokenizer1.eos_token_id)
+
+    print(tokenizer2.eos_token)
+    print(tokenizer2.eos_token_id)
+
     sd1 = model1.state_dict()
     sd2 = model2.state_dict()
 
