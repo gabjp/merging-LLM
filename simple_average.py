@@ -20,6 +20,20 @@ def main():
     tokenizer2 = AutoTokenizer.from_pretrained(args.m2, use_fast=False)
     model2 = AutoModelForCausalLM.from_pretrained(args.m2)
 
+
+    model1.resize_token_embeddings(32001)
+
+    input_embeddings = model1.get_input_embeddings().weight.data
+    output_embeddings = model1.get_output_embeddings().weight.data
+
+    input_embeddings_avg = input_embeddings[:-1].mean(dim=0, keepdim=True)
+    output_embeddings_avg = output_embeddings[:-1].mean(dim=0, keepdim=True)
+
+    input_embeddings[-1:] = input_embeddings_avg
+    output_embeddings[-1:] = output_embeddings_avg
+
+
+
     sd1 = model1.named_parameters()
     sd2 = model2.named_parameters()
 
@@ -54,11 +68,11 @@ def main():
                 print(val1)
                 val1.mul_(args.p)
                 val2.mul_(1-args.p)
-                val1.add_(val2[0:32000])
+                val1.add_(val2)
             elif name1 == "lm_head.weight":
                 val1.mul_(args.p)
                 val2.mul_(1-args.p)
-                val1.add_(val2[0:32000])
+                val1.add_(val2)
             else:
                 val1.mul_(args.p)
                 val2.mul_(1-args.p)
@@ -77,7 +91,7 @@ def main():
         else:
             continue
     
-    tokenizer1.save_pretrained(args.save_path)
+    tokenizer2.save_pretrained(args.save_path)
     model1.save_pretrained(args.save_path)
 
 
