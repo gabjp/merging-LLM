@@ -35,7 +35,7 @@ def main():
     v1 = tokenizer1.get_vocab()
     v2 = tokenizer2.get_vocab()
 
-    print(v2[13,])
+    print(v2[13])
     print(v2[829])
     print(v2[29879])
     print(v2[29958])
