@@ -54,11 +54,11 @@ def main():
                 print(val1)
                 val1.mul_(args.p)
                 val2.mul_(1-args.p)
-                val1.add_(val2)
+                val1.add_(val2[0:32000])
             elif name1 == "lm_head.weight":
                 val1.mul_(args.p)
                 val2.mul_(1-args.p)
-                val1.add_(val2)
+                val1.add_(val2[0:32000])
             else:
                 val1.mul_(args.p)
                 val2.mul_(1-args.p)
