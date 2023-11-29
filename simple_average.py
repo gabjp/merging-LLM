@@ -21,19 +21,6 @@ def main():
     model2 = AutoModelForCausalLM.from_pretrained(args.m2)
 
 
-    model1.resize_token_embeddings(32001)
-
-    input_embeddings = model1.get_input_embeddings().weight.data
-    output_embeddings = model1.get_output_embeddings().weight.data
-
-    input_embeddings_avg = input_embeddings[:-1].mean(dim=0, keepdim=True)
-    output_embeddings_avg = output_embeddings[:-1].mean(dim=0, keepdim=True)
-
-    input_embeddings[-1:] = input_embeddings_avg
-    output_embeddings[-1:] = output_embeddings_avg
-
-
-
     sd1 = model1.named_parameters()
     sd2 = model2.named_parameters()
 
