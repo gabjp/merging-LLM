@@ -32,17 +32,6 @@ def main():
     print(f"Embedding 1: {embeddings_1.size()}")
     print(f"Embedding 2: {embeddings_2.size()}")
 
-    v1 = tokenizer1.get_vocab()
-    v2 = tokenizer2.get_vocab()
-
-    print(v2)
-    print(v2[13])
-    print(v2[829])
-    print(v2[29879])
-    print(v2[29958])
-
-    return
-
     # Find the differences between the two dictionaries
     keys = set(v1.keys()).union(set(v2.keys()))
     differences = {}
