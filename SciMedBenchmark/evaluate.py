@@ -1,7 +1,7 @@
 import argparse
 import json
 import torch
-from transformers import AutoTokenizer, AutoModelForQuestionAnswering, QuestionAnsweringPipeline
+from transformers import AutoTokenizer, AutoModelForQuestionAnswering, QuestionAnsweringPipeline, AutoModelForCausalLM
 
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
@@ -24,7 +24,7 @@ def main():
 
     #Load Model
     tokenizer = AutoTokenizer.from_pretrained(args.model_path)
-    model = AutoModelForQuestionAnswering.from_pretrained(args.model_path).to(device)
+    model = AutoModelForCausalLM.from_pretrained(args.model_path).to(device)
 
     pipeline = QuestionAnsweringPipeline(model=model, framework="pt", tokenizer=tokenizer, device=device)
 
