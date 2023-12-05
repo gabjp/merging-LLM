@@ -24,7 +24,7 @@ def main():
 
     #Load Model
     tokenizer = AutoTokenizer.from_pretrained(args.model_path)
-    model = AutoModelForCausalLM.from_pretrained(args.model_path).to(device)
+    model = AutoModelForCausalLM.from_pretrained(args.model_path)#.to(device)
 
     pipeline = QuestionAnsweringPipeline(model=model, framework="pt", tokenizer=tokenizer, device=device)
 
