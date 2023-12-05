@@ -11,9 +11,9 @@ parser.add_argument("--model-name", type=str, default="")
 args = parser.parse_args()
 
 def load_data():
-    f = open('test_PubMedQA.json')
+    f = open('data/test_PubMedQA.json')
     pubmedqa = json.load(f)
-    f = open('test_SciQ.json')
+    f = open('data/test_SciQ.json')
     sciq = json.load(f)
 
     return pubmedqa, sciq
@@ -29,9 +29,9 @@ def main():
     pipeline = QuestionAnsweringPipeline(model=model, framework="pt", tokenizer=tokenizer, device=device)
 
     #Generate Answer
-    pubmedqa_questions = [elem["QUESTION"] for elem in pubmedqa]
-    pubmedqa_answer = [elem["final_decision"] for elem in pubmedqa]
-    pubmedqa_context = [elem["CONTEXTS"] for elem in pubmedqa]
+    pubmedqa_questions = [pubmedqa[key]["QUESTION"] for key in pubmedqa.keys()]
+    pubmedqa_answer = [pubmedqa[key]["final_decision"] for key in pubmedqa.keys()]
+    pubmedqa_context = [pubmedqa[key]["CONTEXTS"] for key in pubmedqa.keys()]
 
     sciq_questions = [elem["question"] for elem in sciq]
     sciq_answer = [elem["correct_answer"] for elem in sciq]
@@ -46,6 +46,7 @@ def main():
     print(sciq_predictions)
 
     print(pubmedqa_predictions)
+
 
 
     #Save
