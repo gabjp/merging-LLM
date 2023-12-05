@@ -5,6 +5,7 @@ from transformers import AutoTokenizer, AutoModelForQuestionAnswering, QuestionA
 
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+device = torch.device("cpu")
 parser = argparse.ArgumentParser()
 parser.add_argument("--model-path", type=str, default="")
 parser.add_argument("--model-name", type=str, default="")
@@ -24,7 +25,7 @@ def main():
 
     #Load Model
     tokenizer = AutoTokenizer.from_pretrained(args.model_path)
-    model = AutoModelForCausalLM.from_pretrained(args.model_path)#.to(device)
+    model = AutoModelForCausalLM.from_pretrained(args.model_path).to(device)
 
     pipeline = QuestionAnsweringPipeline(model=model, framework="pt", tokenizer=tokenizer, device=device)
 
