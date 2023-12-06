@@ -31,7 +31,6 @@ def question_template(question, contexts, options):
     for i in range(len(options)):
         prompt+= f"{i+1}. {options[i]}\n"
     prompt+= "The answer to the QUESTION must be given in only one line, containing only the text of the right OPTION \nAnswer:"
-    return f"[QUESTION]\n{question}\nAnswer with yes, no or maybe: "
     return prompt
 
 def main():
@@ -58,11 +57,12 @@ def main():
     #Generate Answer
     q1 = question_template(pubmedqa_questions[0], pubmedqa_context[0], pubmed_options)
     inputs = tokenizer(q1, padding=True, return_tensors="pt", truncation=True, max_length=2048).to(device)
-    output = model.generate(**inputs, do_sample=True, max_new_tokens=64, min_new_tokens=2)
+    output = model.generate(**inputs, do_sample=False, max_new_tokens=64, min_new_tokens=2)
     response = tokenizer.decode(output.tolist()[0], skip_special_tokens=True)
     print("Response: ")
     print(response)
     print(output.tolist())
+    print(inputs)
 
 
 
