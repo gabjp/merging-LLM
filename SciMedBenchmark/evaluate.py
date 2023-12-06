@@ -62,6 +62,7 @@ def main():
     response = tokenizer.decode(output.tolist()[0], skip_special_tokens=True)
     print("Response: ")
     print(response)
+    print(output.tolist())
 
 
 
