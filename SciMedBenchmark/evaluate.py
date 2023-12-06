@@ -58,7 +58,7 @@ def main():
     #Generate Answer
     q1 = "Question"
     inputs = tokenizer(q1, padding=False, return_tensors="pt", truncation=True, max_length=2048).to(device)
-    output = model.generate(inputs["input_ids"], do_sample=False, max_new_tokens=64, min_new_tokens=2)
+    output = model.generate(inputs["input_ids"], do_sample=False, max_new_tokens=2048, min_new_tokens=2)
     response = tokenizer.decode(output.tolist()[0], skip_special_tokens=True)
     print("Response: ")
     print(response)
