@@ -26,7 +26,7 @@ def question_template(question, contexts, options):
     if contexts[0] == "":
         prompt+= "No context available \n"
     else:
-        for i in range(0, contexts):
+        for i in range(0, len(contexts)):
             prompt += f"Context {i+1}: {contexts[i]}\n"
     prompt+= "[OPTIONS]\n"
     for i in range(len(options)):
