@@ -32,6 +32,7 @@ def question_template(question, contexts, options):
     for i in range(len(options)):
         prompt+= f"{i+1}. {options[i]}\n"
     prompt+= "The answer must be given in only one line, containing only the text of the right answer"
+    return prompt
 
 def main():
     #Load Data
