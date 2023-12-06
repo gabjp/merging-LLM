@@ -21,7 +21,7 @@ def load_data():
     return pubmedqa, sciq
 
 def question_template(question, contexts, options):
-    prompt = f"""Answer the following [QUESTION] based on the given [CONTEXTS], if available. \n[QUESTION]\n{question}\n[CONTEXTS]\n"""
+    prompt = f"""Output one of the following [OPTIONS], answering the following [QUESTION] based on the given [CONTEXTS], if available. \n[QUESTION]\n{question}\n[CONTEXTS]\n"""
     if contexts[0] == "":
         prompt+= "No context available \n"
     else:
