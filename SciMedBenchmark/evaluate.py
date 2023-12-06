@@ -7,7 +7,6 @@ random.seed(0)
 
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-device = torch.device("cpu")
 parser = argparse.ArgumentParser()
 parser.add_argument("--model-path", type=str, default="")
 parser.add_argument("--model-name", type=str, default="")
@@ -50,23 +49,17 @@ def main():
 
     print(question_template(pubmedqa_questions[0], pubmedqa_context[0], pubmed_options))
     print(question_template(sciq_questions[0], [sciq_context[0]], sciq_options[0]))
-    return
+    
     #Load Model
     tokenizer = AutoTokenizer.from_pretrained(args.model_path)
     model = AutoModelForCausalLM.from_pretrained(args.model_path).to(device)
 
     #Generate Answer
-    pipeline = QuestionAnsweringPipeline(model=model, framework="pt", tokenizer=tokenizer, device=device)
-
-    print("Answering sciq questions...")
-    sciq_predictions = pipeline(context=sciq_context[0], question=sciq_questions[0])
-
-    print("Answering sciq questions...")
-    pubmedqa_predictions = pipeline(context=pubmedqa_context[0], question=pubmedqa_questions[0])
-
-    print(sciq_predictions)
-
-    print(pubmedqa_predictions)
+    q1 = question_template(pubmedqa_questions[0], pubmedqa_context[0], pubmed_options)
+    inputs = tokenizer(q1, padding=True, return_tensors="pt", truncation=True, max_length=2048).to(device)
+    output = model.generate(inputs, do_sample=False, max_new_tokens=64, min_new_tokens=2)
+    response = tokenizer.decode(output, skip_special_tokens=True)
+    print(response)
 
 
 
