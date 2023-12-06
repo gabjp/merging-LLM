@@ -57,7 +57,7 @@ def main():
     #Generate Answer
     q1 = question_template(pubmedqa_questions[0], pubmedqa_context[0], pubmed_options)
     inputs = tokenizer(q1, padding=True, return_tensors="pt", truncation=True, max_length=2048).to(device)
-    output = model.generate(inputs, do_sample=False, max_new_tokens=64, min_new_tokens=2)
+    output = model.generate(**inputs, do_sample=False, max_new_tokens=64, min_new_tokens=2)
     response = tokenizer.decode(output, skip_special_tokens=True)
     print(response)
 
