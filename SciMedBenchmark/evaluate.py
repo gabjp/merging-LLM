@@ -53,6 +53,7 @@ def main():
     #Load Model
     tokenizer = AutoTokenizer.from_pretrained(args.model_path)
     model = AutoModelForCausalLM.from_pretrained(args.model_path).to(device)
+    model.eval()
 
     #Generate Answer
     q1 = question_template(pubmedqa_questions[0], pubmedqa_context[0], pubmed_options)
