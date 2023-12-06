@@ -22,7 +22,7 @@ def load_data():
     return pubmedqa, sciq
 
 def question_template(question, contexts, options):
-    prompt = f"""Answer the following [QUESTION] based on the given [CONTEXTS], if available. \n[QUESTION]\n{question}\n[Contexts]"""
+    prompt = f"""Answer the following [QUESTION] based on the given [CONTEXTS], if available. \n[QUESTION]\n{question}\n[CONTEXTS]\n"""
     if contexts[0] == "":
         prompt+= "No context available \n"
     else:
@@ -49,7 +49,7 @@ def main():
     sciq_options = [random.sample([elem['distractor1'], elem['distractor2'], elem['distractor3'], elem['correct_answer']], 4) for elem in sciq]
 
     print(question_template(pubmedqa_questions[0], pubmedqa_context[0], pubmed_options))
-    print(question_template(sciq_questions[0], sciq_context[0], sciq_options[0]))
+    print(question_template(sciq_questions[0], [sciq_context[0]], sciq_options[0]))
     return
     #Load Model
     tokenizer = AutoTokenizer.from_pretrained(args.model_path)
