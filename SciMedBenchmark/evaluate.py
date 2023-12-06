@@ -30,7 +30,7 @@ def question_template(question, contexts, options):
     prompt+= "[OPTIONS]\n"
     for i in range(len(options)):
         prompt+= f"{i+1}. {options[i]}\n"
-    prompt+= "The answer must be given in only one line, containing only the text of the right answer"
+    prompt+= "The answer must be given in only one line, containing only the text of the right answer \n Answer:"
     return prompt
 
 def main():
@@ -59,6 +59,7 @@ def main():
     inputs = tokenizer(q1, padding=True, return_tensors="pt", truncation=True, max_length=2048).to(device)
     output = model.generate(**inputs, do_sample=False, max_new_tokens=64, min_new_tokens=2)
     response = tokenizer.decode(output.tolist()[0], skip_special_tokens=True)
+    print("Response: ")
     print(response)
 
 
