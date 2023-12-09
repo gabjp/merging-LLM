@@ -21,7 +21,7 @@ def load_data():
     return pubmedqa, sciq
 
 def question_template(question, contexts, options):
-    prompt = f"""### Question: {question} Answer 'yes', 'no' or 'maybe'. \n\n ### Answer:"""
+    prompt = f"""### Question: {question} Answer 'yes', 'no' or 'maybe'. \n\n### Answer:"""
     return prompt
 
 def main():
