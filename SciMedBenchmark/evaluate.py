@@ -21,16 +21,7 @@ def load_data():
     return pubmedqa, sciq
 
 def question_template(question, contexts, options):
-    prompt = f"""Output one of the following [OPTIONS], answering the following [QUESTION] based on the given [CONTEXTS], if available. \n[QUESTION]\n{question}\n[CONTEXTS]\n"""
-    if contexts[0] == "":
-        prompt+= "No context available \n"
-    else:
-        for i in range(0, len(contexts)):
-            prompt += f"Context {i+1}: {contexts[i]}\n"
-    prompt+= "[OPTIONS]\n"
-    for i in range(len(options)):
-        prompt+= f"{i+1}. {options[i]}\n"
-    prompt+= "The answer to the QUESTION must be given in only one line, containing only the text of the right OPTION \nAnswer:"
+    prompt = f"""### Question: {question} Answer 'yes', 'no' or 'maybe'. \n\n ### Answer:"""
     return prompt
 
 def main():
