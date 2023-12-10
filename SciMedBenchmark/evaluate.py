@@ -13,12 +13,10 @@ parser.add_argument("--model-name", type=str, default="")
 args = parser.parse_args()
 
 def load_data():
-    f = open('data/test_PubMedQA.json')
+    f = open('data/pubmed_qa/test_set.json')
     pubmedqa = json.load(f)
-    f = open('data/test_SciQ.json')
-    sciq = json.load(f)
 
-    return pubmedqa, sciq
+    return pubmedqa, None
 
 def question_template(question, contexts, options):
     prompt = f"""### Question: {question} Answer 'yes', 'no' or 'maybe'. \n\n### Answer:"""
@@ -33,13 +31,13 @@ def main():
     pubmedqa_context = [pubmedqa[key]["CONTEXTS"] for key in pubmedqa.keys()]
     pubmed_options = ['yes', 'no', 'maybe']
 
-    sciq_questions = [elem["question"] for elem in sciq]
-    sciq_answer = [elem["correct_answer"] for elem in sciq]
-    sciq_context = [elem["support"] for elem in sciq]
-    sciq_options = [random.sample([elem['distractor1'], elem['distractor2'], elem['distractor3'], elem['correct_answer']], 4) for elem in sciq]
+    #sciq_questions = [elem["question"] for elem in sciq]
+    #sciq_answer = [elem["correct_answer"] for elem in sciq]
+    #sciq_context = [elem["support"] for elem in sciq]
+    #sciq_options = [random.sample([elem['distractor1'], elem['distractor2'], elem['distractor3'], elem['correct_answer']], 4) for elem in sciq]
 
     print(question_template(pubmedqa_questions[0], pubmedqa_context[0], pubmed_options))
-    print(question_template(sciq_questions[0], [sciq_context[0]], sciq_options[0]))
+    #print(question_template(sciq_questions[0], [sciq_context[0]], sciq_options[0]))
     
     #Load Model
     tokenizer = AutoTokenizer.from_pretrained(args.model_path)
