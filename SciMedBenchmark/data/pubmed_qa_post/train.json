@@ -1,0 +1,2502 @@
+[
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does histologic chorioamnionitis correspond to clinical chorioamnionitis?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can vitamin C prevent complex regional pain syndrome in patients with wrist fractures?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "It's Fournier's gangrene still dangerous?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can the condition of the cell microenvironment of mediastinal lymph nodes help predict the risk of metastases in non-small cell lung cancer?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Pancreas retransplantation:  a second chance for diabetic patients?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Gender difference in survival of resected non-small cell lung cancer: histology-related phenomenon?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is HIV/STD control in Jamaica making a difference?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Delayed peripheral facial palsy in the stapes surgery: can it be prevented?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is external palliative radiotherapy for gallbladder carcinoma effective?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can elevated troponin I levels predict complicated clinical course and inhospital mortality in patients with acute pulmonary embolism?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Nasal fractures:  is closed reduction satisfying?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Body perception: do parents, their children, and their children's physicians perceive body image differently?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Oral mucocele/ranula: Another human immunodeficiency virus-related salivary gland disease?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is half-dose contrast-enhanced three-dimensional MR angiography sufficient for the abdominal aorta and pelvis?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Starting insulin in type 2 diabetes: continue oral hypoglycemic agents?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Thoracic and thoracoabdominal aneurysm repair: is reimplantation of spinal cord arteries a waste of time?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Transgastric endoscopic splenectomy: is it possible?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Malnutrition, a new inducer for arterial calcification in hemodialysis patients?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Inhibin: a new circulating marker of hydatidiform mole?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Could Adult European Pharmacoresistant Epilepsy Patients Be Treated With Higher Doses of Zonisamide?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Follow-up of patients with new cardiovascular implantable electronic devices: are experts' recommendations implemented in routine clinical practice?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can patient coaching reduce racial/ethnic disparities in cancer pain control?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can clinicians use the PHQ-9 to assess depression in people with vision loss?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can infundibular height predict the clearance of lower pole calyceal stone after extracorporeal shockwave lithotripsy?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Do liquid-based preparations of urinary cytology perform differently than classically prepared cases?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does blood pressure change in treated hypertensive patients depending on whether it is measured by a physician or a nurse?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Double balloon enteroscopy: is it efficacious and safe in a community setting?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Cancer of the buccal mucosa: are margins and T-stage accurate predictors of local control?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Patient comprehension of emergency department care and instructions: are patients aware of when they do not understand?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Do episodic migraineurs selectively attend to headache-related visual stimuli?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is a mandatory general surgery rotation necessary in the surgical clerkship?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Do prerecorded lecture VODcasts affect lecture attendance of first-yearpre-clinical Graduate Entry to Medicine students?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Vaccine protection in the elderly: are Austrian seniors adequately protected by vaccinations?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Undescended testes: does age at orchiopexy affect survival of the testis?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does glomerular hyperfiltration in pregnancy damage the kidney in women with more parities?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does ultrasound-scored synovitis depend on the pharmacokinetics of subcutaneous anti-TNF agents in patients with rheumatoid arthritis?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "After CLASS--Is a voluntary public insurance program a realistic way to meet the long-term support and service needs of adults with disabilities?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Preparing patients at high risk of falls for discharge home after rehabilitation: Do we meet the guidelines?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Percutaneous ethanol injection for benign cystic thyroid nodules: is aspiration of ethanol-mixed fluid advantageous?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Juvenile ankylosing spondylitis--is it the same disease as adult ankylosing spondylitis?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is unsafe sexual behaviour increasing among HIV-infected individuals?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Delayed diagnosis of anorectal malformations: are current guidelines sufficient?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Chemoradiation instead of surgery to treat mid and low rectal tumors: is it safe?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does binge drinking during early pregnancy increase the risk of psychomotor deficits?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does fluoridation reduce the use of dental services among adults?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is the international normalised ratio (INR) reliable?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is there a role for leukocyte and CRP measurements in the diagnosis of acute appendicitis in the elderly?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Residual fundus or neofundus after laparoscopic sleeve gastrectomy: is fundectomy safe and effective as revision surgery?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "CPAP therapy in patients with idiopathic pulmonary fibrosis and obstructive sleep apnea: does it offer a better quality of life and sleep?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is the processing of affective prosody influenced by spatial attention?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can homemade alcohol (Raksi) be useful for preserving dead bodies?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Autoerotic asphyxiation: secret pleasure--lethal outcome?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does health information exchange reduce redundant imaging?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Long-term significance of postictal psychotic episodes II. Are they predictive of interictal psychotic episodes?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does topical N-acetylcysteine application after myringotomy cause severe otorrhea?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Do general practice selection scores predict success at MRCGP?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Attenuation of ischemia/reperfusion-induced ovarian damage in rats: does edaravone offer protection?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Are there associations of health status, disease activity and damage in SLE patients?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Alcohol consumption and acute myocardial infarction: a benefit of alcohol consumed with meals?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "A model of healing of Los Angeles grades C and D reflux oesophagitis: is there an optimal time of acid suppression for maximal healing?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does sonographic needle guidance affect the clinical outcome of intraarticular injections?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Are head and neck specific quality of life measures necessary?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Are the GFRUP's recommendations for withholding or withdrawing treatments in critically ill children applicable?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Mammographic screening in Sami speaking municipalities and a control group. Are early outcome measures influenced by ethnicity?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Has the use of complementary and alternative medicine therapies by U.S. adults with chronic disease-related functional limitations changed from 2002 to 2007?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Gynecological cancer alarm symptoms: is contact with specialist care associated with lifestyle and socioeconomic status?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Type II supracondylar humerus fractures: can some be treated nonoperatively?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Are IgM-enriched immunoglobulins an effective adjuvant in septic VLBW infants?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does preoperative anemia adversely affect colon and rectal surgery outcomes?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can computerised tomography replace bone scintigraphy in detecting bone metastases from breast cancer?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does lunar position influence the time of delivery?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Digital Tomosynthesis: A Viable Alternative to Noncontrast Computed Tomography for the Follow-Up of Nephrolithiasis?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Are there progressive brain changes in schizophrenia?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Gadofosveset-enhanced MR angiography of carotid arteries: does steady-state imaging improve accuracy of first-pass imaging?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can common carotid intima media thickness serve as an indicator of both cardiovascular phenotype and risk among black Africans?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does laparoscopic cholecystectomy influence peri-sinusoidal cell activity?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Do Wound Cultures Give Information About the Microbiology of Blood Cultures in Severe Burn Patients?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can Roux-en-Y gastric bypass provide a lifelong solution for diabetes mellitus?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is patient outcome compromised during the initial experience with robot-assisted radical cystectomy?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does short-term treatment with proton pump inhibitors cause rebound aggravation of symptoms?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Are serum leptin levels a prognostic factor in advanced lung cancer?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does exercise during pregnancy prevent postnatal depression?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Are there effects of intrauterine cocaine exposure on delinquency during early adolescence?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Do elderly patients benefit from surgery in addition to radiotherapy for treatment of metastatic spinal cord compression?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Mitral replacement or repair for functional mitral regurgitation in dilated and ischemic cardiomyopathy: is it really the same?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does diabetes mellitus influence the efficacy of FDG-PET in the diagnosis of cervical cancer?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is delayed gastric emptying following pancreaticoduodenectomy related to pylorus preservation?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does hippocampal atrophy on MRI predict cognitive decline?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Recurrent spontaneous abortion and skewed X-inactivation: is there an association?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Advanced epithelial ovarian carcinoma in Thai women: should we continue to offer second-look laparotomy?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Delays in time to primary treatment after a diagnosis of breast cancer: does it impact survival?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does higher body mass index contribute to worse asthma control in an urban population?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does anastomotic leakage affect functional outcome after rectal resection for cancer?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is high-sensitivity C-reactive protein associated with carotid atherosclerosis in healthy Koreans?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Therapeutic anticoagulation in the trauma patient: is it safe?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does solid culture for tuberculosis influence clinical decision making in India?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does responsibility affect the public's valuation of health care interventions?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Cutaneous melanoma in a multiethnic population: is this a different disease?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is routine intraoperative frozen-section examination of sentinel lymph nodes in breast cancer worthwhile?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is there a uniform basal endometrial gene expression profile during the implantation window in women who became pregnant in a subsequent ICSI cycle?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Are reports of mechanical dysfunction in chronic oro-facial pain related to somatisation?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does hypoglycaemia increase the risk of cardiovascular events?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Intravenous administration of metoclopramide by 2 min bolus vs 15 min infusion: does it affect the improvement of headache while reducing the side effects?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does either obesity or OSA severity influence the response of autotitrating CPAP machines in very obese subjects?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does telmisartan prevent hepatic fibrosis in rats with alloxan-induced diabetes?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does preloading with colloids prevent hemodynamic changes when neurosurgical patients are subsequently changed to the seated position?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Do inhaled corticosteroids affect perception of dyspnea during bronchoconstriction in asthma?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "High cumulative insulin exposure: a risk factor of atherosclerosis in type 1 diabetes?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Has the prevalence of health care services use increased over the last decade (2001-2009) in elderly people?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is there a relationship between rheumatoid arthritis and periodontal disease?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does induction chemotherapy have a role in the management of nasopharyngeal carcinoma?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is discordance in TEOAE and AABR outcomes predictable in newborns?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Production of chemokines by perivascular adipose tissue: a role in the pathogenesis of atherosclerosis?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is Alveolar Macrophage Phagocytic Dysfunction in Children With Protracted Bacterial Bronchitis a Forerunner to Bronchiectasis?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Diagnostic characteristics of child bipolar I disorder: does the \"Treatment of Early Age Mania (team)\" sample generalize?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can tailored interventions increase mammography use among HMO women?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is atropine needed with ketamine sedation?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "May mean platelet volume levels be a predictor in the diagnosis of pelvic inflammatory disease?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Autoxidation products of both carbohydrates and lipids are increased in uremic plasma: is there oxidative stress in uremia?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Treadmill training post stroke: are there any secondary benefits?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "The effective orifice area/patient aortic annulus area ratio: a better way to compare different bioprostheses?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is there an increase in the incidence of gbs carrier rates among pregnant women in northern Israel?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is there any relation between cervical cord plaques and discopathy in patients with multiple sclerosis?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Aripiprazole: a new risk factor for pathological gambling?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does a febrile reaction to platelets predispose recipients to red blood cell alloimmunization?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Steroids in aminoglycoside-containing ear drops: do they reduce cochlear toxicity?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Should general practitioners call patients by their first names?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does birth center care during a woman's first pregnancy have any impact on her future reproduction?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Assessment of carotid artery stenosis before coronary artery bypass surgery. Is it always necessary?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does route of delivery affect maternal and perinatal outcome in women with eclampsia?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Cervical spine fractures in geriatric blunt trauma patients with low-energy mechanism: are clinical predictors adequate?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does parity increase insulin resistance during pregnancy?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Delayed imaging in routine CT examinations of the abdomen and pelvis: is it worth the additional cost of radiation and time?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Should pulp chamber pulpotomy be seen as a permanent treatment?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Prostate bed target interfractional motion using RTOG consensus definitions and daily CT on rails : Does target motion differ between superior and inferior portions of the clinical target volume?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Neck pain treatment with acupuncture: does the number of needles matter?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Application of computer-aided diagnosis (CAD) in MR-mammography (MRM): do we really need whole lesion time curve distribution analysis?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Clinical identifiers for early-stage primary/idiopathic adhesive capsulitis: are we seeing the real picture?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Risk factors for major depression during midlife among a community sample of women with and without prior major depression: are they the same or different?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is peak concentration needed in therapeutic drug monitoring of vancomycin?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is there an intrauterine influence on obesity?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Do patients with localized prostate cancer treatment really want more aggressive treatment?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Pertrochanteric fractures: is there an advantage to an intramedullary nail?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Do nontriploid partial hydatidiform moles exist?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Are neighbourhood social capital and availability of sports facilities related to sports participation among Dutch adolescents?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Cycloplegic autorefraction in young adults: is it mandatory?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Human papillomavirus and pterygium. Is the virus a risk factor?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does limb-salvage surgery offer patients better quality of life and functional capacity than amputation?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Are bipolar disorders underdiagnosed in patients with depressive episodes?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is the Hawkins sign able to predict necrosis in fractures of the neck of the astragalus?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Should lower limb fractures be treated surgically in patients with chronic spinal injuries?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is Chaalia/Pan Masala harmful for health?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "CYP2D6*4 allele and breast cancer risk: is there any association?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does Paget's disease exist in India?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Effects of exercise training on heart rate and QT interval in healthy young individuals: are there gender differences?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is Acupuncture Efficacious for Treating Phonotraumatic Vocal Pathologies?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Do all ethnic groups in New Zealand exhibit socio-economic mortality gradients?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Are stroke patients' reports of home blood pressure readings reliable?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Aromatase inhibitor-related musculoskeletal symptoms: is preventing osteoporosis the key to eliminating these symptoms?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Living in an urban environment and non-communicable disease risk in Thailand: Does timing matter?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is year of radical prostatectomy a predictor of outcome in prostate cancer?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does anterior laxity of the uninjured knee influence clinical outcomes of ACL reconstruction?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does skin care frequency affect the severity of incontinence-associated dermatitis in critically ill patients?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Affect-regulated exercise intensity: does training at an intensity that feels 'good' improve physical health?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Three-dimensional ultrasound-validated large-core needle biopsy: is it a reliable method for the histological assessment of breast lesions?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Suturing of the nasal septum after septoplasty, is it an effective alternative to nasal packing?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is the fibronectin-aggrecan complex present in cervical disk disease?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can echocardiography and ECG discriminate hereditary transthyretin V30M amyloidosis from hypertrophic cardiomyopathy?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does Molecular Genotype Provide Useful Information in the Management of Radioiodine Refractory Thyroid Cancers?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "The effect of an intracerebroventricular injection of metformin or AICAR on the plasma concentrations of melatonin in the ewe: potential involvement of AMPK?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Cigarettes and cinema: does parental restriction of R-rated movie viewing reduce adolescent smoking susceptibility?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Literacy after cerebral hemispherectomy: Can the isolated right hemisphere read?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "May student examiners be reasonable substitute examiners for faculty in an undergraduate OSCE on medical emergencies?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is motion perception deficit in schizophrenia a consequence of eye-tracking abnormality?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does cup-cage reconstruction with oversized cups provide initial stability in THA for osteoporotic acetabular fractures?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "PREVALENCE OF THE STREPTOCOCUS AGALACTIAE IN THE PREGNANT WOMAN FROM THE AUTONOMIC CITY OF MELILLA: IS CULTURE A DETERMINANT FACTOR?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Do hospitals provide lower quality care on weekends?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Knee extensor strength, dynamic stability, and functional ambulation: are they related in Parkinson's disease?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Target Serum Urate: Do Gout Patients Know Their Goal?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Stage I non-small cell lung carcinoma: really an early stage?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Appendectomy timing: Will delayed surgery increase the complications?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is resected stomach volume related to weight loss after laparoscopic sleeve gastrectomy?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is transurethral catheterisation the ideal method of bladder drainage?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does feeding tube insertion and its timing improve survival?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Pitfalls in urinary stone identification using CT attenuation values: are we getting the same information on different scanner models?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Fatigue in primary Sjögren's syndrome: is there a link with the fibromyalgia syndrome?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Birth characteristics and risk of low intellectual performance in early adulthood: are the associations confounded by socioeconomic factors in adolescence or familial effects?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Ovarian torsion in children: is oophorectomy necessary?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Laparoscopic myomectomy: do size, number, and location of the myomas form limiting factors for laparoscopic myomectomy?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does base deficit predict mortality in patients with severe traumatic brain injury?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Are laboratories reporting serum quantitative hCG results correctly?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does loss of consciousness predict neuropsychological decrements after concussion?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can D-dimer become a new diagnostic parameter for acute appendicitis?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Are women who are treated for hypothyroidism at risk for pregnancy complications?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is tumour expression of VEGF associated with venous invasion and survival in pT3 renal cell carcinoma?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Health care for immigrants in Europe: is there still consensus among country experts about principles of good practice?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is prophylactic fixation a cost-effective method to prevent a future contralateral fragility hip fracture?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Parasacral sciatic nerve block: does the elicited motor response predict the success rate?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can Ambu self-inflating bag and Neopuff infant resuscitator provide adequate and safe manual inflations for infants up to 10 kg weight?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Standardizing care in medical oncology: are Web-based systems the answer?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Do emergency ultrasound fellowship programs impact emergency medicine residents' ultrasound education?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does the enteral feeding advancement affect short-term outcomes in very low birth weight infants?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Recovery Outcome Measures: Is There a Place for Culture, Attitudes, and Faith?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Dementia and aphasia in motor neuron disease: an underrecognised association?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is scintigraphy a guideline method in determining amputation levels in diabetic foot?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Immunohistochemical assessment of steroid hormone receptors in tissues of the anal canal. Implications for anal incontinence?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Are physician estimates of asthma severity less accurate in black than in white patients?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can mental imagery functional magnetic resonance imaging predict recovery in patients with disorders of consciousness?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Hearing loss: an unknown complication of pre-eclampsia?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does lung ischemia and reperfusion have an impact on coronary flow?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Are patients with serious mental illness more likely to be admitted to nursing homes with more deficiencies in care?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Do older men benefit from curative therapy of localized prostate cancer?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Do resident's leadership skills relate to ratings of technical skill?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Multidisciplinary breast cancer clinics. Do they work?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Do microbiological factors account for poor pregnancy outcome among unmarried pregnant women in Poland?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does concept mapping enhance learning outcome of nursing students?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is minilaparoscopic inguinal hernia repair feasible?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Doppler examination of uteroplacental circulation in early pregnancy: can it predict adverse outcome?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Did Chile's traffic law reform push police enforcement?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Are virtual planning and guided surgery for head and neck reconstruction economically viable?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does elective re-siting of intravenous cannulae decrease peripheral thrombophlebitis?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Fragility of the esophageal mucosa: a pathognomonic endoscopic sign of primary eosinophilic esophagitis?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does early migraine treatment shorten time to headache peak and reduce its severity?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Do preoperative statins reduce atrial fibrillation after coronary artery bypass grafting?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can routine offering of influenza vaccination in office-based settings reduce racial and ethnic disparities in adult influenza vaccination?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does high blood pressure reduce the risk of chronic low back pain?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is semi-closed endarterectomy of the superficial femoral artery combined with a short venous bypass in case of insufficient venous material an acceptable alternative for limb-threatening ischemia?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Could chest wall rigidity be a factor in rapid death from illicit fentanyl abuse?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is severe pain immediately after spinal augmentation a predictor of long-term outcomes?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is inhaled prophylactic heparin useful for prevention and Management of Pneumonia in ventilated ICU patients?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Do dermatomyositis and polymyositis affect similar thigh muscles?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Do women with ovaries of polycystic morphology without any other features of PCOS benefit from short-term metformin co-treatment during IVF?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does patient-prosthesis mismatch after aortic valve replacement affect survival and quality of life in elderly patients?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is human cytomegalovirus infection associated with hypertension?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Evaluation of pediatric VCUG at an academic children's hospital: is the radiographic scout image necessary?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Do approved doctors and medical referees in the UK agree when assessing a seafarer's fitness?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is being small for gestational age a risk factor for retinopathy of prematurity?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does pretreatment with statins improve clinical outcome after stroke?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can PRISM predict length of PICU stay?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does coronary angiography before emergency aortic surgery affect in-hospital mortality?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Are income-related differences in active travel associated with physical environmental characteristics?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does ossification of the posterior longitudinal ligament affect the neurological outcome after traumatic cervical cord injury?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does normothermic normokalemic simultaneous antegrade/retrograde perfusion improve myocardial oxygenation and energy metabolism for hypertrophied hearts?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does the Child Health Computing System adequately identify children with cerebral palsy?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Gluten tolerance in adult patients with celiac disease 20 years after diagnosis?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Do emergency medical services professionals think they should participate in disease prevention?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can implant retention be recommended for treatment of infected TKA?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "The influence of atmospheric pressure on aortic aneurysm rupture--is the diameter of the aneurysm important?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is Panton-Valentine leucocidin associated with the pathogenesis of Staphylococcus aureus bacteraemia in the UK?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Storage of vaccines in the community: weak link in the cold chain?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Some aspects of social exclusion: do they influence suicide mortality?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Memory-provoked rCBF-SPECT as a diagnostic tool in Alzheimer's disease?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is endothelin-1 an aggravating factor in the development of acute pancreatitis?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does prostate morphology affect outcomes after holmium laser enucleation?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Lloyd-Davies position with Trendelenburg--a disaster waiting to happen?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Are 99mTc leukocyte scintigraphy and SBFT studies useful in children suspected of having inflammatory bowel disease?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Proliferative index obtained by DNA image cytometry. Does it add prognostic information in Auer IV breast cancer?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is it time to reconsider lobectomy in low-risk paediatric thyroid cancer?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Cue-induced behavioural activation: a novel model of alcohol craving?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Are polymorphisms in oestrogen receptors genes associated with lipid levels in response to hormone therapy?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is aneurysm repair justified for the patients aged 80 or older after aneurysmal subarachnoid hemorrhage?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does positron emission tomography change management in primary rectal cancer?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can magnetic resonance-ultrasound fusion biopsy improve cancer detection in enlarged prostates?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Pharmacologic regimens for knee osteoarthritis prevention: can they be cost-effective?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does radiotherapy of the primary rectal cancer affect prognosis after pelvic exenteration for recurrent rectal cancer?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is a pressor necessary during aortic perfusion and oxygenation therapy of cardiac arrest?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Vitamin D supplementation and regulatory T cells in apparently healthy subjects: vitamin D treatment for autoimmune diseases?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Do familiar teammates request and accept more backup?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Do symptoms matter when considering patients for phase I clinical trials?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does laparoscopic antireflux surgery improve quality of life in patients whose gastro-oesophageal reflux disease is well controlled with medical therapy?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Maternal creatine homeostasis is altered during gestation in the spiny mouse: is this a metabolic adaptation to pregnancy?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does sex influence the response to intravenous thrombolysis in ischemic stroke?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is duration of psychological treatment for depression related to return into treatment?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Diffusion-weighted echo-planar MR imaging of primary parotid gland tumors: is a prediction of different histologic subtypes possible?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does patella position influence ligament balancing in total knee arthroplasty?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "The Deformity Angular Ratio: Does It Correlate With High-Risk Cases for Potential Spinal Cord Monitoring Alerts in Pediatric 3-Column Thoracic Spinal Deformity Corrective Surgery?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does quilting suture prevent seroma in abdominoplasty?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does angiotensin-converting enzyme-1 (ACE-1) gene polymorphism lead to chronic kidney disease among hypertensive patients?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Will clinical studies elucidate the connection between the length of storage of transfused red blood cells and clinical outcomes?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can vaginal pH be measured from the wet mount slide?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Staging laparoscopy in patients with hepatocellular carcinoma: is it useful?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Must early postoperative oral intake be limited to laparoscopy?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Do follow-up recommendations for abnormal Papanicolaou smears influence patient adherence?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Medical student education in emergency medicine: do students meet the national standards for clinical encounters of selected core conditions?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Cholestasis associated with small bowel atresia: do we always need to investigate?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can dentists recognize manipulated digital radiographs?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Are WHO/UNAIDS/UNICEF-recommended replacement milks for infants of HIV-infected mothers appropriate in the South African context?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is cholecystectomy really an indication for concomitant splenectomy in mild hereditary spherocytosis?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does a colonoscopy after acute diverticulitis affect its management?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can p53 alterations be used to predict tumour response to pre-operative chemo-radiotherapy in locally advanced rectal cancer?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is intensive monitoring during the first transfusion in pediatric patients necessary?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is ankle/arm pressure predictive for cardiovascular mortality in older patients living in nursing homes?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Household and food shopping environments: do they play a role in socioeconomic inequalities in fruit and vegetable consumption?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "The secular growth acceleration: does it appear during fetal life?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does aerobic fitness influence microvascular function in healthy adults at risk of developing Type 2 diabetes?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Young-Burgess classification of pelvic ring fractures: does it predict mortality, transfusion requirements, and non-orthopaedic injuries?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "The FOOTSTEP self-management foot care programme: are rheumatoid arthritis patients physically able to participate?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is it possible to stop treatment with nucleos(t)ide analogs in patients with e-antigen negative chronic hepatitis B?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Should direct mesocolon invasion be included in T4 for the staging of gastric cancer?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Do we need imaging to diagnose appendicitis in children?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "The objective structured clinical examination: can physician-examiners participate from a distance?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does somatostatin confer insulinostatic effects of neuromedin u in the rat pancreas?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "In vivo visualization of pyloric mucosal hypertrophy in infants with hypertrophic pyloric stenosis: is there an etiologic role?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is eligibility for a chemotherapy protocol a good prognostic factor for invasive bladder cancer after radical cystectomy?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Do ART patients face higher C-section rates during their stage of delivery?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does obesity predict knee pain over fourteen years in women, independently of radiographic changes?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Acute hepatitis C in Israel: a predominantly iatrogenic disease?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Biomechanical and wound healing characteristics of corneas after excimer laser keratorefractive surgery: is there a difference between advanced surface ablation and sub-Bowman's keratomileusis?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can static foot posture measurements predict regional plantar surface area?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Prevalence of chronic conditions among Medicare Part A beneficiaries in 2008 and 2010: are Medicare beneficiaries getting sicker?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Do patterns of knowledge and attitudes exist among unvaccinated seniors?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does surgery or radiation therapy impact survival for patients with extrapulmonary small cell cancers?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can continuous physical training counteract aging effect on myoelectric fatigue?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Nasal polyposis: is there an inheritance pattern?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Are even impaired fasting blood glucose levels preoperatively associated with increased mortality after CABG surgery?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does rural or urban residence make a difference to neonatal outcome in premature birth?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is laparoscopic cholecystectomy safe and acceptable as a day case procedure?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "The nurse cystoscopist: a feasible option?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Preservation of the PCL when performing cruciate-retaining TKA: Is the tibial tuberosity a reliable predictor of the PCL footprint location?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Do communication disorders extend to musical messages?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Body dysmorphic disorder: does it have a psychotic subtype?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Would corrected QT dispersion predict left ventricular hypertrophy in hypertensive patients?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Substance use and HIV-related sexual behaviors among US high school students: are they related?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is intrapartum vibroacoustic stimulation an effective predictor of fetal acidosis?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Are there risk factors that increase the rate of staple line leakage in patients undergoing primary sleeve gastrectomy for morbid obesity?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is aerobic workload positively related to ambulatory blood pressure?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Do family physicians make good sentinels for influenza?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is Aspiration Thrombectomy Beneficial in Patients Undergoing Primary Percutaneous Coronary Intervention?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Are sugars-free medicines more erosive than sugars-containing medicines?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does oral α-galactosidase relieve irritable bowel symptoms?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is (18)F-FDG a surrogate tracer to measure tumor hypoxia?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is cardiovascular evaluation necessary prior to and during beta-blocker therapy for infantile hemangiomas?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does maternal obesity have an influence on feeding behavior of obese children?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can we predict urinary stone composition based on an analysis of microelement concentration in the hair and urine?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Are endometrial polyps from pre-menopausal women similar to post-menopausal women?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Should all patients be optimized to the same preoperative hemoglobin level to avoid transfusion in primary knee arthroplasty?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can we rely on arterial line sampling in performing activated plasma thromboplastin time after cardiac surgery?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Contrast-enhanced MR imaging of hand and finger joints in patients with early rheumatoid arthritis: do we really need a full dose of gadobenate dimeglumine for assessing synovial enhancement at 3 T?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does intra-abdominal desmoid disease affect patients with an ileal pouch differently than those with an ileorectal anastomosis?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is there a first night effect on sleep bruxism?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does a well developed collateral circulation predispose to restenosis after percutaneous coronary intervention?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Has the 80-hour workweek improved surgical resident education in New England?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is controlled ovarian stimulation in intrauterine insemination an acceptable therapy in couples with unexplained non-conception in the perspective of multiple pregnancies?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Chronic functional somatic symptoms: a single syndrome?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can bisphosphonate treatment be stopped in a growing child with skeletal fragility?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is oncoplastic surgery a contraindication for accelerated partial breast radiation using the interstitial multicatheter brachytherapy method?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Empiric treatment of uncomplicated urinary tract infection with fluoroquinolones in older women in Israel: another lost treatment option?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Prostatic syndrome and pleural effusion: are they different diseases?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Women with synchronous primary cancers of the endometrium and ovary: do they have Lynch syndrome?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Rectal cancer threatening or affecting the prostatic plane: is partial prostatectomy oncologically adequate?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is fetal anatomic assessment on follow-up antepartum sonograms clinically useful?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Do people who were passive smokers during childhood have increased risk of long-term work disability?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is dexamethasone an effective alternative to oral prednisone in the treatment of pediatric asthma exacerbations?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does delaying surgery in immature adolescent idiopathic scoliosis patients with progressive curve, lead to addition of fusion levels?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is gastric electrical stimulation superior to standard pharmacologic therapy in improving GI symptoms, healthcare resources, and long-term health care benefits?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Prognostic factors for cervical spondylotic amyotrophy: are signs of spinal cord involvement associated with the neurological prognosis?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Juvenile osteochondritis dissecans: is it a growth disturbance of the secondary physis of the epiphysis?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does sex affect the outcome of laparoscopic cholecystectomy?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Validation of the 2009 TNM version in a large multi-institutional cohort of patients treated for renal cell carcinoma: are further improvements needed?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can autologous platelet-rich plasma gel enhance healing after surgical extraction of mandibular third molars?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is the atopy patch test with house dust mites specific for atopic dermatitis?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does having a regular primary care clinician improve quality of preventive care for young children?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Analysis of the epidemiological pattern of Shigellosis in Barcelona between 1988 and 2012: Is it an emerging sexually transmitted infection?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Chemical shift MRI: is there any contribution to morphologic evaluation of solid breast masses?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Injury and poisoning mortality among young men--are there any common factors amenable to prevention?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Prostate-specific antigen and free prostate-specific antigen in the early detection of prostate cancer: do combination tests improve detection?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is Overexpression of Ki-67 a Prognostic Biomarker of Upper Tract Urinary Carcinoma?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Secondhand smoke risk in infants discharged from an NICU: potential for significant health disparities?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Uniformity of evidence-based treatments in practice?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does family practice at residency teaching sites reflect community practice?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is ultrasound equal to X-ray in pediatric fracture diagnosis?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Bridge experience with long-term implantable left ventricular assist devices. Are they an alternative to transplantation?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Are Reviewers' Scores Influenced by Citations to Their Own Work?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Chronic progressive cervical myelopathy with HTLV-I infection: Variant form of HAM/TSP?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is serum total bilirubin useful to differentiate cardioembolic stroke from other stroke subtypes?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Do provider service networks result in lower expenditures compared with HMOs or primary care case management in Florida's Medicaid program?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Do primary care physicians underprescribe antibiotics for peptic ulcer disease?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Resection of colorectal liver metastases after second-line chemotherapy: is it worthwhile?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does nuchal translucency thickness in the first trimester predict GDM onset during pregnancy?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Do family physicians know the costs of medical care?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does invasive diagnosis of nosocomial pneumonia during off-hours delay treatment?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is the histidine triad nucleotide-binding protein 1 (HINT1) gene a candidate for schizophrenia?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is the clinically positive axilla in breast cancer really a contraindication to sentinel lymph node biopsy?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Canada's Compassionate Care Benefit: is it an adequate public health response to addressing the issue of caregiver burden in end-of-life care?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Very high serum CA 19-9 levels: a contraindication to pancreaticoduodenectomy?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does cognitive function predict frequency compressed speech recognition in listeners with normal hearing and normal cognition?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "The English antibiotic awareness campaigns: did they change the public's knowledge of and attitudes to antibiotic use?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can multiple SNP testing in BRCA2 and BRCA1 female carriers be used to improve risk prediction models in conjunction with clinical assessment?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can normal knee kinematics be restored with unicompartmental knee replacement?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does obesity impact the pattern and outcome of trauma in children?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Comparing femoral version after intramedullary nailing performed by trauma-trained and non-trauma trained surgeons: is there a difference?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Biliary atresia: should all patients undergo a portoenterostomy?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does music influence stress in mechanically ventilated patients?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is low birth weight a risk indicator for congenital cytomegalovirus infection?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Artefacts in 24-h pharyngeal and oesophageal pH monitoring: is simplification of pH data analysis feasible?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Are tuberculosis patients adherent to prescribed treatments in China?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Are normally sighted, visually impaired, and blind pedestrians accurate and reliable at making street crossing decisions?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Are Biochemical Markers of Bone Turnover Representative of Bone Histomorphometry in 370 Postmenopausal Women?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Do somatic complaints predict subsequent symptoms of depression?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Counter sampling combined with medical provider education: do they alter prescribing behavior?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Rotator cuff tear--an occupational disease?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is there any relationship between streptococcal infection and multiple sclerosis?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Updating emotional content in working memory: a depression-specific deficit?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Search engine as a diagnostic tool in difficult immunological and allergologic cases: is Google useful?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Motor performance in chronic low back pain: is there an influence of pain-related cognitions?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can dose reduction to one parotid gland prevent xerostomia?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Nutritional assessment of gluten-free diet. Is gluten-free diet deficient in some nutrient?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "School food policy at Dutch primary schools: room for improvement?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can EMS Providers Provide Appropriate Tidal Volumes in a Simulated Adult-sized Patient with a Pediatric-sized Bag-Valve-Mask?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Inpatient Pediatric Tonsillectomy: Does Hospital Type Affect Cost and Outcomes of Care?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Risky sexual behavior among college students With ADHD: is the mother-child relationship protective?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Cardiovascular risk in a rural adult West African population: is resting heart rate also relevant?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "MR Diagnosis of Bone Metastases at 1.5 T and 3 T: Can STIR Imaging Be Omitted?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Measurement of head and neck paragangliomas: is volumetric analysis worth the effort?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Comparative safety of infliximab and etanercept on the risk of serious infections: does the association vary by patient characteristics?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is coeliac disease screening in risk groups justified?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does TDP-43 type confer a distinct pattern of atrophy in frontotemporal lobar degeneration?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Global Longitudinal Pathway: has medical education curriculum influenced medical students' skills and attitudes toward culturally diverse populations?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is laparoscopic sonography a reliable and sensitive procedure for staging colorectal cancer?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can ki-67 play a role in prediction of breast cancer patients' response to neoadjuvant chemotherapy?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Post-tonsillectomy late haemorrhage: is it a preferably night-time event?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "A short stay or 23-hour ward in a general and academic children's hospital: are they effective?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Eyelid-parotid metastasis: do we screen for coexisting masses?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Transsphenoidal pituitary surgery in Cushing's disease: can we predict outcome?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can dobutamine stress echocardiography induce cardiac troponin elevation?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does transverse apex coincide with coronal apex levels (regional or global) in adolescent idiopathic scoliosis?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is there any interest to perform ultrasonography in boys with undescended testis?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Could the extent of lymphadenectomy be modified by neoadjuvant chemotherapy in cervical cancer?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Cold knife conization vs. LEEP. Are they the same procedure?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can mandibular depiction be improved by changing the thickness of double-oblique computed tomography images?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does ischemic preconditioning require reperfusion before index ischemia?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Screening History Among Women with Invasive Cervical Cancer in an Academic Medical Center: Will We Miss Cancers Following Updated Guidelines?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Prompting Primary Care Providers about Increased Patient Risk As a Result of Family History: Does It Work?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is ganglionated plexi ablation during Maze IV procedure beneficial for postoperative long-term stable sinus rhythm?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is there awareness of pharmaceutical expenditure in the reformed primary care system?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Chemoradiotherapy in the management of locally advanced squamous cell carcinoma esophagus: is surgical resection required?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "A patient with myelomeningocele: is untethering necessary prior to scoliosis correction?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Treatment of vitamin D deficiency in CKD patients with ergocalciferol: are current K/DOQI treatment guidelines adequate?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is the advanced age a contraindication to GERD laparoscopic surgery?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Do preoperative serum C-reactive protein levels predict the definitive pathological stage in patients with clinically localized prostate cancer?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Are we seeing the effects of public awareness campaigns?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does spontaneous remission occur in polyarteritis nodosa?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does β-catenin have a role in pathogenesis of sebaceous cell carcinoma of the eyelid?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does microbial contamination influence the success of the hematopoietic cell transplantation outcomes?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Immune suppression by lysosomotropic amines and cyclosporine on T-cell responses to minor and major histocompatibility antigens: does synergy exist?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does menopausal transition affect the quality of life?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does context matter for the relationship between deprivation and all-cause mortality?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does an additional antirotation U-Blade (RC) lag screw improve treatment of AO/OTA 31 A1-3 fractures with gamma 3 nail?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Failed IUD insertions in community practice: an under-recognized problem?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is gastric cancer different in Korea and the United States?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is cytokeratin immunoreactivity useful in the diagnosis of short-segment Barrett's oesophagus in Korea?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is extended aortic replacement in acute type A dissection justifiable?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is double-balloon enteroscopy an accurate method to diagnose small-bowel disorders?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does tranexamic acid reduce desmopressin-induced hyperfibrinolysis?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Should ascitis volume and anthropometric measurements be estimated in hospitalized alcoholic cirrotics?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Esophagogastric devascularization without splenectomy in portal hypertension: safe and effective?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does the leukocyte count correlate with the severity of injury?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Elephant trunk in a small-calibre true lumen for chronic aortic dissection: cause of haemolytic anaemia?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can medical students contribute to quality assurance programmes in day surgery?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Estimation of basal metabolic rate in Chinese: are the current prediction equations applicable?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is there a discrepancy between patient and physician quality of life assessment?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Emergency double-balloon enteroscopy combined with real-time viewing of capsule endoscopy: a feasible combined approach in acute overt-obscure gastrointestinal bleeding?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does psychological distress predict disability?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is acute fibrinous and organizing pneumonia the expression of immune dysregulation?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Inpatient versus outpatient management of neutropenic fever in gynecologic oncology patients: is risk stratification useful?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Do the changes in the serum levels of IL-2, IL-4, TNFalpha, and IL-6 reflect the inflammatory activity in the patients with post-ERCP pancreatitis?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Scrotal approach to both palpable and impalpable undescended testes: should it become our first choice?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does screening or surveillance for primary hepatocellular carcinoma with ultrasonography improve the prognosis of patients?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Systematic use of patient-rated depression severity monitoring: is it helpful and feasible in clinical psychiatry?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does automatic transmission improve driving behavior in older drivers?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is the holmium:YAG laser the best intracorporeal lithotripter for the ureter?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is the h-index predictive of greater NIH funding success among academic radiologists?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Should early extubation be the goal for children after congenital cardiac surgery?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is laparoscopic adrenalectomy safe and effective for adrenal masses larger than 7 cm?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can predilatation in transcatheter aortic valve implantation be omitted?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does peritoneal dialysis affect halitosis in patients with end-stage renal disease?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is there still a need for living-related liver transplantation in children?",
+        "output": "yes"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Do general practice characteristics influence uptake of an information technology (IT) innovation in primary care?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does the central venous pressure predict fluid responsiveness?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Is routine dissection of the station 9 lymph nodes really necessary for primary lung cancer?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can mass drug administration lead to the sustainable control of schistosomiasis?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Laparoscopic-assisted ileocolic resections in patients with Crohn's disease: are abscesses, phlegmons, or recurrent disease contraindications?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Do mutations causing low HDL-C promote increased carotid intima-media thickness?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does a family meetings intervention prevent depression and anxiety in family caregivers of dementia patients?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Are interstitial fluid concentrations of meropenem equivalent to plasma concentrations in critically ill patients receiving continuous renal replacement therapy?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can you deliver accurate tidal volume by manual resuscitator?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Metered-dose inhalers. Do health care providers know what to teach?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does high-dose radiotherapy benefit palliative lung cancer patients?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does the investing layer of the deep cervical fascia exist?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Are physicians aware of the side effects of angiotensin-converting enzyme inhibitors?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does the use of atypical antipsychotics as adjunctive therapy in depression result in cost savings?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Spleen-preserving distal pancreatectomy with resection of the splenic vessels. Should one rely on the short gastric arteries?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Diagnostic and therapeutic ureteroscopy: is dilatation of ureteral meatus always necessary?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Do symptoms predict COPD in smokers?",
+        "output": "no"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Actinobaculum schaalii, a cause of urinary tract infections in children?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Does accompanying metabolic syndrome contribute to heart dimensions in hypertensive patients?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Could different follow-up modalities play a role in the diagnosis of asymptomatic endometrial cancer relapses?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can APC mutation analysis contribute to therapeutic decisions in familial adenomatous polyposis?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "\"Would a man smell a rose then throw it away?",
+        "output": "maybe"
+    },
+    {
+        "input": "Answer 'yes', 'no' or 'maybe'.",
+        "instruction": "Can the Internet be used to improve sexual health awareness in web-wise young people?",
+        "output": "maybe"
+    }
+]
