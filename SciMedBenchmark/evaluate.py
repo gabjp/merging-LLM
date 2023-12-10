@@ -48,8 +48,8 @@ def main():
     response = []
     sciq_prompts = [question_template(question, options) for question, options in zip(sciq_questions, sciq_options)]
     sciq_lens = [len(question) for question in sciq_prompts]
-    for start in range(0, len(sciq_prompts), 64):
-        batch_data = sciq_prompts[start: start + 64]
+    for start in range(0, len(sciq_prompts), 10):
+        batch_data = sciq_prompts[start: start + 10]
         inputs = tokenizer(batch_data, padding=True, return_tensors="pt", truncation=True, max_length=2048).to(device)
         output = model.generate(inputs["input_ids"], do_sample=False, max_new_tokens=64, min_new_tokens=2)
         response += tokenizer.decode(output.tolist(), skip_special_tokens=True)
