@@ -15,11 +15,13 @@ args = parser.parse_args()
 def load_data():
     f = open('data/pubmed_qa/test_set.json')
     pubmedqa = json.load(f)
+    f = open('data/sciq/test.json')
+    sciq = json.load(f)
 
-    return pubmedqa, None
+    return pubmedqa, sciq
 
 def question_template(question, contexts, options):
-    prompt = f"""### Question: {question} Answer 'yes', 'no' or 'maybe'. \n\n### Answer:"""
+    prompt = f"""Human: {question}\nAnswer '{options[0]}', '{options[1]}', '{options[2]}' or '{options[3]}'.\nAssistant: """
     return prompt
 
 def main():
@@ -31,13 +33,13 @@ def main():
     pubmedqa_context = [pubmedqa[key]["CONTEXTS"] for key in pubmedqa.keys()]
     pubmed_options = ['yes', 'no', 'maybe']
 
-    #sciq_questions = [elem["question"] for elem in sciq]
-    #sciq_answer = [elem["correct_answer"] for elem in sciq]
-    #sciq_context = [elem["support"] for elem in sciq]
-    #sciq_options = [random.sample([elem['distractor1'], elem['distractor2'], elem['distractor3'], elem['correct_answer']], 4) for elem in sciq]
+    sciq_questions = [elem["question"] for elem in sciq]
+    sciq_answer = [elem["correct_answer"] for elem in sciq]
+    sciq_context = [elem["support"] for elem in sciq]
+    sciq_options = [random.sample([elem['distractor1'], elem['distractor2'], elem['distractor3'], elem['correct_answer']], 4) for elem in sciq]
 
     print(question_template(pubmedqa_questions[0], pubmedqa_context[0], pubmed_options))
-    #print(question_template(sciq_questions[0], [sciq_context[0]], sciq_options[0]))
+    print(question_template(sciq_questions[0], [sciq_context[0]], sciq_options[0]))
     
     #Load Model
     tokenizer = AutoTokenizer.from_pretrained(args.model_path)
@@ -45,7 +47,7 @@ def main():
     model.eval()
 
     #Generate Answer
-    q1 = question_template(pubmedqa_questions[0], pubmedqa_context[1], pubmed_options)
+    q1 = question_template(sciq_questions[0], pubmedqa_context[1], sciq_options[0])
     inputs = tokenizer(q1, padding=False, return_tensors="pt", truncation=True, max_length=2048).to(device)
     output = model.generate(inputs["input_ids"], do_sample=False, max_new_tokens=2048, min_new_tokens=2)
     response = tokenizer.decode(output.tolist()[0], skip_special_tokens=True)
