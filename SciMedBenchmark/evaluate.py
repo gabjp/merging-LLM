@@ -52,8 +52,9 @@ def main():
         batch_data = sciq_prompts[start: start + 10]
         inputs = tokenizer(batch_data, padding=True, return_tensors="pt", truncation=True, max_length=2048).to(device)
         output = model.generate(inputs["input_ids"], do_sample=False, max_new_tokens=64, min_new_tokens=2)
-        print(output.tolist())
-        response += tokenizer.decode(output.tolist(), skip_special_tokens=True)
+        for out in output.tolist():
+            decoded = tokenizer.decode(out, skip_special_tokens=True)
+            response.append(decoded)
     preds = [out[i:] for out, i in zip(response, sciq_lens)]
     print(preds)
     
