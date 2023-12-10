@@ -38,7 +38,7 @@ def main():
     sciq_context = [elem["support"] for elem in sciq]
     sciq_options = [random.sample([elem['distractor1'], elem['distractor2'], elem['distractor3'], elem['correct_answer']], 4) for elem in sciq]
 
-    print(question_template(pubmedqa_questions[0], pubmedqa_context[0], pubmed_options))
+    #print(question_template(pubmedqa_questions[0], pubmedqa_context[0], pubmed_options))
     print(question_template(sciq_questions[0], [sciq_context[0]], sciq_options[0]))
     
     #Load Model
