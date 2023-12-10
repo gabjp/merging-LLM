@@ -13,9 +13,9 @@ parser.add_argument("--model-name", type=str, default="")
 args = parser.parse_args()
 
 def load_data():
-    f = open('/data/pubmed_qa_post/test.json')
+    f = open('data/pubmed_qa_post/test.json')
     pubmedqa = json.load(f)
-    f = open('/data/sciq_post/test.json')
+    f = open('data/sciq_post/test.json')
     sciq = json.load(f)
 
     return pubmedqa, sciq
