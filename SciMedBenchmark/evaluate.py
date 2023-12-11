@@ -70,7 +70,7 @@ def main():
     sciq_count = [int(true.partition('\n')[0] in pred) for true,pred in zip(sciq_answer, preds)]
     print(f"Sciq acc (contained first line): {sum(sciq_count)/len(sciq_count)}")
 
-    sciq_count = [int(true.partition('\n')[0] in pred) for true,pred in zip(sciq_answer, preds)]
+    sciq_count = [int(true.partition('\n')[0] == pred) for true,pred in zip(sciq_answer, preds)]
     print(f"Sciq acc (equal first line): {sum(sciq_count)/len(sciq_count)}")
     
 
