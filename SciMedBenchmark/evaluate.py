@@ -59,9 +59,20 @@ def main():
     print(preds)
 
     sciq_count = [int(true in pred) for true,pred in zip(sciq_answer, preds)]
-    print(f"Sciq acc: {sum(sciq_count)/len(sciq_count)}")
-    
+    print(f"Sciq acc (contained): {sum(sciq_count)/len(sciq_count)}")
 
+    sciq_count = [int(true == pred) for true,pred in zip(sciq_answer, preds)]
+    print(f"Sciq acc (equal): {sum(sciq_count)/len(sciq_count)}")
+
+    sciq_count = [int(true.replace(" ", "") == pred.replace(" ", "")) for true,pred in zip(sciq_answer, preds)]
+    print(f"Sciq acc (equal removing space): {sum(sciq_count)/len(sciq_count)}")
+    
+    sciq_count = [int(true.partition('\n')[0] in pred) for true,pred in zip(sciq_answer, preds)]
+    print(f"Sciq acc (contained first line): {sum(sciq_count)/len(sciq_count)}")
+
+    sciq_count = [int(true.partition('\n')[0] in pred) for true,pred in zip(sciq_answer, preds)]
+    print(f"Sciq acc (equal first line): {sum(sciq_count)/len(sciq_count)}")
+    
 
 
     #Save
