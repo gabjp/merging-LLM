@@ -22,7 +22,7 @@ def load_data():
 
 def question_template(question, options):
 
-    prompt = f"""Human: {question}\n{options}\nAssistant: """
+    prompt = f""" A chat between a curious user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user's questions.\n Human: {question}\n{options}\nAssistant: """
     return prompt
 
 def main():
