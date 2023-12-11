@@ -23,7 +23,12 @@ def pre_pubmedqa():
 
     for (pre, post) in zip([train,val,test],[post_train,post_val,post_test]):
         for key in pre.keys():
-            post_task = {"input": "Answer 'yes', 'no' or 'maybe'."}
+            post_task = {}
+            context_str = "Context:\n"
+            for context in pre[key]["CONTEXTS"]:
+                context_str += context
+                context_str += "\n"
+            post_task["input"] = context_str + "Answer 'yes', 'no' or 'maybe'."
             post_task["instruction"] = pre[key]["QUESTION"]
             post_task["output"] = pre[key]["final_decision"]
             post.append(post_task)
@@ -57,7 +62,7 @@ def pre_sciq():
             post_task = {}
             sciq_options = [task['distractor1'], task['distractor2'], task['distractor3'], task['correct_answer']]
             random.shuffle(sciq_options)
-            post_task["input"] = f"Answer '{sciq_options[0]}', '{sciq_options[1]}', '{sciq_options[2]}' or '{sciq_options[3]}'."
+            post_task["input"] = f"Context:\n{task['support']}\nAnswer '{sciq_options[0]}', '{sciq_options[1]}', '{sciq_options[2]}' or '{sciq_options[3]}'."
             post_task["instruction"] = task["question"]
             post_task["output"] = task["correct_answer"]
             post.append(post_task)
@@ -69,3 +74,4 @@ def pre_sciq():
 
 if __name__ == "__main__":
     pre_sciq()
+    pre_pubmedqa()
