@@ -22,7 +22,7 @@ def load_data():
 
 def question_template(question, options):
 
-    prompt = f"""Human: {question}\n{options}.\nAssistant: """
+    prompt = f"""Human: {question}\n{options}\nAssistant: """
     return prompt
 
 def main():
@@ -48,10 +48,9 @@ def main():
     response = []
     sciq_prompts = [question_template(question, options) for question, options in zip(sciq_questions, sciq_options)]
     sciq_lens = [len(question) for question in sciq_prompts]
-    for start in range(0, len(sciq_prompts), 10):
-        batch_data = sciq_prompts[start: start + 10]
-        inputs = tokenizer(batch_data, padding=True, return_tensors="pt", truncation=True, max_length=2048).to(device)
-        output = model.generate(inputs["input_ids"], do_sample=False, max_new_tokens=64, min_new_tokens=2)
+    for idx in range(0, len(sciq_prompts)):
+        inputs = tokenizer(sciq_prompts[idx], padding=False, return_tensors="pt", truncation=True, max_length=2048).to(device)
+        output = model.generate(**inputs, do_sample=False, max_new_tokens=64, min_new_tokens=2)
         for out in output.tolist():
             decoded = tokenizer.decode(out, skip_special_tokens=True)
             print(decoded)
