@@ -53,7 +53,7 @@ def main():
         output = model.generate(**inputs, do_sample=False, max_new_tokens=64, min_new_tokens=2)
         for out in output.tolist():
             decoded = tokenizer.decode(out, skip_special_tokens=True)
-            print(decoded)
+            #print(decoded)
             response.append(decoded)
     preds = [out[i:] for out, i in zip(response, sciq_lens)]
     print(preds)
@@ -85,7 +85,7 @@ def main():
         output = model.generate(**inputs, do_sample=False, max_new_tokens=64, min_new_tokens=2)
         for out in output.tolist():
             decoded = tokenizer.decode(out, skip_special_tokens=True)
-            print(decoded)
+            #print(decoded)
             response.append(decoded)
     preds = [out[i:] for out, i in zip(response, pubmedqa_lens)]
     print(preds)
@@ -107,7 +107,7 @@ def main():
 
     pubmedqa_count = [int((true in pred.partition('\n')[0]) and (len(pred.partition('\n')[0]) <= 2.5*len(true))) for true,pred in zip(pubmedqa_answer, preds)]
     print(f"pubmedqa acc (contained first line and length): {sum(pubmedqa_count)/len(pubmedqa_count)}")
-    
+
     pubmedqa_count = [int((true in pred.split(' ')[0])) for true,pred in zip(pubmedqa_answer, preds)]
     print(f"pubmedqa acc (contained first word): {sum(pubmedqa_count)/len(pubmedqa_count)}")
     
