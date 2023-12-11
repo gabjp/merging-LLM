@@ -73,7 +73,7 @@ def main():
     sciq_count = [int(true == pred.partition('\n')[0]) for true,pred in zip(sciq_answer, preds)]
     print(f"Sciq acc (equal first line): {sum(sciq_count)/len(sciq_count)}")
 
-    sciq_count = [int((true in pred.partition('\n')[0]) and (len(true) <= 1.5*len(pred.partition('\n')[0]))) for true,pred in zip(sciq_answer, preds)]
+    sciq_count = [int((true in pred.partition('\n')[0]) and (len(pred.partition('\n')[0]) <= 2.5*len(true))) for true,pred in zip(sciq_answer, preds)]
     print(f"Sciq acc (contained first line and length): {sum(sciq_count)/len(sciq_count)}")
     
     print("evaluating pubmedqa")
@@ -105,7 +105,7 @@ def main():
     pubmedqa_count = [int(true == pred.partition('\n')[0]) for true,pred in zip(pubmedqa_answer, preds)]
     print(f"pubmedqa acc (equal first line): {sum(pubmedqa_count)/len(pubmedqa_count)}")
 
-    pubmedqa_count = [int((true in pred.partition('\n')[0]) and (len(true) <= 1.5*len(pred.partition('\n')[0]))) for true,pred in zip(pubmedqa_answer, preds)]
+    pubmedqa_count = [int((true in pred.partition('\n')[0]) and (len(pred.partition('\n')[0]) <= 2.5*len(true))) for true,pred in zip(pubmedqa_answer, preds)]
     print(f"pubmedqa acc (contained first line and length): {sum(pubmedqa_count)/len(pubmedqa_count)}")
     
 
