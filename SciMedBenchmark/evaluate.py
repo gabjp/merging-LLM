@@ -73,11 +73,34 @@ def main():
     sciq_count = [int(true.partition('\n')[0] == pred) for true,pred in zip(sciq_answer, preds)]
     print(f"Sciq acc (equal first line): {sum(sciq_count)/len(sciq_count)}")
     
+    print("evaluating pubmedqa")
+    response = []
+    pubmedqa_prompts = [question_template(question, options) for question, options in zip(pubmedqa_questions, pubmedqa_options)]
+    pubmedqa_lens = [len(question) for question in pubmedqa_prompts]
+    for idx in range(0, len(pubmedqa_prompts)):
+        inputs = tokenizer(pubmedqa_prompts[idx], padding=False, return_tensors="pt", truncation=True, max_length=2048).to(device)
+        output = model.generate(**inputs, do_sample=False, max_new_tokens=64, min_new_tokens=2)
+        for out in output.tolist():
+            decoded = tokenizer.decode(out, skip_special_tokens=True)
+            print(decoded)
+            response.append(decoded)
+    preds = [out[i:] for out, i in zip(response, pubmedqa_lens)]
+    print(preds)
 
+    pubmedqa_count = [int(true in pred) for true,pred in zip(pubmedqa_answer, preds)]
+    print(f"pubmedqa acc (contained): {sum(pubmedqa_count)/len(pubmedqa_count)}")
 
-    #Save
-    #Compute Metrics
-    #Save
+    pubmedqa_count = [int(true == pred) for true,pred in zip(pubmedqa_answer, preds)]
+    print(f"pubmedqa acc (equal): {sum(pubmedqa_count)/len(pubmedqa_count)}")
+
+    pubmedqa_count = [int(true.replace(" ", "") == pred.replace(" ", "")) for true,pred in zip(pubmedqa_answer, preds)]
+    print(f"pubmedqa acc (equal removing space): {sum(pubmedqa_count)/len(pubmedqa_count)}")
+    
+    pubmedqa_count = [int(true.partition('\n')[0] in pred) for true,pred in zip(pubmedqa_answer, preds)]
+    print(f"pubmedqa acc (contained first line): {sum(pubmedqa_count)/len(pubmedqa_count)}")
+
+    pubmedqa_count = [int(true.partition('\n')[0] == pred) for true,pred in zip(pubmedqa_answer, preds)]
+    print(f"pubmedqa acc (equal first line): {sum(pubmedqa_count)/len(pubmedqa_count)}")
 
     pass
 
