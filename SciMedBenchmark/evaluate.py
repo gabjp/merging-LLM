@@ -57,6 +57,9 @@ def main():
             response.append(decoded)
     preds = [out[i:] for out, i in zip(response, sciq_lens)]
     print(preds)
+
+    sciq_count = [int(true in pred) for true,pred in zip(sciq_answer, preds)]
+    print(f"Sciq acc: {sum(sciq_count)/len(sciq_count)}")
     
 
 
