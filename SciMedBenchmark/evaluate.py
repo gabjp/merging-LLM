@@ -108,7 +108,8 @@ def main():
     pubmedqa_count = [int((true in pred.partition('\n')[0]) and (len(pred.partition('\n')[0]) <= 2.5*len(true))) for true,pred in zip(pubmedqa_answer, preds)]
     print(f"pubmedqa acc (contained first line and length): {sum(pubmedqa_count)/len(pubmedqa_count)}")
 
-    pubmedqa_count = [int((true in pred.split(' ')[0])) for true,pred in zip(pubmedqa_answer, preds)]
+    pubmedqa_count = [int((true in pred.split()[0])) for true,pred in zip(pubmedqa_answer, preds)]
+    print([pred.split()[0] for pred in preds])
     print(f"pubmedqa acc (contained first word): {sum(pubmedqa_count)/len(pubmedqa_count)}")
     
 
