@@ -100,9 +100,9 @@ def pre_boolq():
     for (pre, post) in zip([train,val],[post_train,post_val]):
         for task in pre:
             post_task = {}
-            post_task["input"] = "Context:\n" + task["passage"] + "\nAnswer 'true' or 'false'."
+            post_task["input"] = "Context:\n" + task["passage"] + "\nAnswer 'True' or 'False'."
             post_task["instruction"] = task["question"]
-            post_task["output"] = task["answer"]
+            post_task["output"] = str(task["answer"])
             post.append(post_task)
 
     with open('data/boolq_post/train.json', 'w', encoding='utf-8') as f:
