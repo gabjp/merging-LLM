@@ -79,9 +79,9 @@ def main():
     preds = [out[i:] for out, i in zip(response, pubmedqa_lens)]
     print(preds)
 
-    pubmedqa_count = [int((true in pred.split()[0])) for true,pred in zip(pubmedqa_answer, preds)]
+    pubmedqa_count = [int((true in pred.split()[0]) and (len(pred.partition('\n')[0]) <= 2.5*len(true))) for true,pred in zip(pubmedqa_answer, preds)]
     print([pred.split()[0] for pred in preds])
-    print(f"pubmedqa acc (contained first word): {sum(pubmedqa_count)/len(pubmedqa_count)}")
+    print(f"pubmedqa acc (contained first word and first line length): {sum(pubmedqa_count)/len(pubmedqa_count)}")
 
     print("evaluating boolq")
     response = []
@@ -97,9 +97,9 @@ def main():
     preds = [out[i:] for out, i in zip(response, boolq_lens)]
     print(preds)
 
-    boolq_count = [int((true in pred.split()[0])) for true,pred in zip(boolq_answer, preds)]
+    boolq_count = [int((true in pred.split()[0]) and (len(pred.partition('\n')[0]) <= 2.5*len(true))) for true,pred in zip(boolq_answer, preds)]
     print([pred.split()[0] for pred in preds])
-    print(f"boolq acc (contained first word): {sum(boolq_count)/len(boolq_count)}")
+    print(f"boolq acc (contained first word and first line length): {sum(boolq_count)/len(boolq_count)}")
     
 
 if __name__ == "__main__":
