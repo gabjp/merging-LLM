@@ -72,6 +72,43 @@ def pre_sciq():
     with open('data/sciq_post/test.json', 'w', encoding='utf-8') as f:
         json.dump(post_test, f, ensure_ascii=False, indent=4)
 
+def load_boolq():
+    train = []
+
+    with open('data/boolq/train.jsonl', 'r') as json_file:
+        json_list = list(json_file)
+
+    for json_str in json_list:
+        train.append(json.loads(json_str))
+
+    val = []
+
+    with open('data/boolq/dev.jsonl', 'r') as json_file:
+        json_list = list(json_file)
+
+    for json_str in json_list:
+        val.append(json.loads(json_str))
+
+   
+    return train, val
+
+def pre_boolq():
+    train, val = load_boolq()
+    post_train = []
+    post_val = []
+
+    for (pre, post) in zip([train,val],[post_train,post_val]):
+        for task in pre:
+            post_task = {}
+            post_task["input"] = "Context:\n" + task["passage"] + "\nAnswer 'true' or 'false'."
+            post_task["instruction"] = task["question"]
+            post_task["output"] = task["answer"]
+            post.append(post_task)
+
+    with open('data/boolq_post/train.json', 'w', encoding='utf-8') as f:
+        json.dump(post_train, f, ensure_ascii=False, indent=4)
+    with open('data/boolq_post/test.json', 'w', encoding='utf-8') as f:
+        json.dump(post_val, f, ensure_ascii=False, indent=4)
+
 if __name__ == "__main__":
-    pre_sciq()
-    pre_pubmedqa()
+    pre_boolq()
