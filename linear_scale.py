@@ -30,11 +30,10 @@ def main():
 
     print("merging", flush=True)
 
-    l2 = list(sd1)
-    l1 = np.linspace(args.start_p, args.end_p, num = len(l2))
-    l3 = list(sd2)
+    p_list = np.linspace(args.start_p, args.end_p, num = 32)
     
-    for (p,(name1,val1),(name2,val2)) in zip(l1,l2,l3):
+    for ((name1,val1),(name2,val2)) in zip(sd1,sd2):
+        p = p_list[int(name1.split(".")[2])] # Retrieve layer number
         print(f"{name1} -- [{p}/{1-p}]")
         val1.mul_(p)
         val2.mul_(1-p)
