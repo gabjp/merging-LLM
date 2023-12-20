@@ -5,6 +5,7 @@ import torch
 import random
 import gc
 import numpy as np
+from peft import PeftConfig
 
 def layer(string_list):
     if len(string_list) >=3 and string_list[2] == 'weight' and string_list[1] != 'norm':
@@ -25,17 +26,19 @@ def main():
     parser.add_argument("--start-head", type=int, default=0)
     args = parser.parse_args()
 
-    tokenizer1 = AutoTokenizer.from_pretrained(args.m1, use_fast=False)
-    model1 = AutoModelForCausalLM.from_pretrained(args.m1)
+    #tokenizer1 = AutoTokenizer.from_pretrained(args.m1, use_fast=False)
+    #model1 = AutoModelForCausalLM.from_pretrained(args.m1)
 
-    tokenizer2 = AutoTokenizer.from_pretrained(args.m2, use_fast=False)
-    model2 = AutoModelForCausalLM.from_pretrained(args.m2)
+    #tokenizer2 = AutoTokenizer.from_pretrained(args.m2, use_fast=False)
+    #model2 = AutoModelForCausalLM.from_pretrained(args.m2)
 
-    print(type(model1))
-    print(dir(type(model1)))
+    config = PeftConfig.from_pretrained(args.m1)
 
-    sd1 = model1.named_parameters()
-    sd2 = model2.named_parameters()
+    print(type(config))
+    print(dir(type(config)))
+
+    #sd1 = model1.named_parameters()
+    #sd2 = model2.named_parameters()
 
 
 
