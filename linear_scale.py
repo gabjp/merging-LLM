@@ -6,8 +6,14 @@ import random
 import gc
 import numpy as np
 
-def layer(string):
-    return 0 if string == 'weight' else int(string) + 1
+def layer(string_list):
+    if len(string_list) >=3 and string_list[2] == 'weight':
+        idx = 0
+    elif len(string_list) >=3:
+        idx = int(string_list[2]) + 1
+    else:
+        idx = 33
+    return idx
 
 def main():
     parser = argparse.ArgumentParser()
@@ -33,12 +39,10 @@ def main():
 
     print("merging", flush=True)
 
-    p_list = np.linspace(args.start_p, args.end_p, num = 33) # 32 layers + embeddings
+    p_list = np.linspace(args.start_p, args.end_p, num = 34) # 32 layers + embeddings +final layer
     
     for ((name1,val1),(name2,val2)) in zip(sd1,sd2):
-        if len(name1.split(".")) >=2: string = name1.split(".")[2]
-        else: string = name1.split(".")[-1]
-        p = p_list[layer(string)] # Retrieve layer number
+        p = p_list[layer(name1.split("."))] # Retrieve layer number
         print(f"{name1} -- [{p}/{1-p}]")
         val1.mul_(p)
         val2.mul_(1-p)
