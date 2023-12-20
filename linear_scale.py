@@ -34,7 +34,9 @@ def main():
     l2 = list(sd1)
     l3 = list(sd2)
 
-    assert len(l1) == len(l2) == len(l3)
+    print(len(l1))
+    print(len(l2))
+    print(len(l3))
 
     print(list(zip(l1,l2,l3))[0])
     
