@@ -7,7 +7,7 @@ import gc
 import numpy as np
 
 def layer(string_list):
-    if len(string_list) >=3 and string_list[2] == 'weight':
+    if len(string_list) >=3 and string_list[2] == 'weight' and string_list[1] != 'norm':
         idx = 0
     elif len(string_list) >=3:
         idx = int(string_list[2]) + 1
