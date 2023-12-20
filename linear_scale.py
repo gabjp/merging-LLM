@@ -26,6 +26,8 @@ def main():
     sd1 = model1.named_parameters()
     sd2 = model2.named_parameters()
 
+    print(sd1)
+
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
     print("merging", flush=True)
@@ -33,9 +35,6 @@ def main():
     l1 = np.linspace(args.start_p, args.end_p, num = len(list(sd1)))
     l2 = list(sd1)
     l3 = list(sd2)
-
-    for _ in sd1:
-        print("oi")
 
     print(list(zip(l1,l2,l3))[0])
     
