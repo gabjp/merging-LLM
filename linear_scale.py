@@ -34,9 +34,8 @@ def main():
     l2 = list(sd1)
     l3 = list(sd2)
 
-    print(len(l1))
-    print(len(l2))
-    print(len(l3))
+    for _ in sd1:
+        print("oi")
 
     print(list(zip(l1,l2,l3))[0])
     
