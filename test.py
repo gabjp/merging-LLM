@@ -40,7 +40,7 @@ def main():
     print(dir(type(config)))
     print(config.to_dict())
 
-    file = load_file(args.m1 + "/adapter_model.bin", 'rb')
+    file = load_file(args.m1 + "/adapter_model.bin")
     print(file)
 
     #sd1 = model1.named_parameters()
