@@ -7,6 +7,7 @@ import gc
 import numpy as np
 from peft import PeftConfig
 import pickle
+from safetensors.torch import load_file
 
 def layer(string_list):
     if len(string_list) >=3 and string_list[2] == 'weight' and string_list[1] != 'norm':
@@ -39,9 +40,8 @@ def main():
     print(dir(type(config)))
     print(config.to_dict())
 
-    file = open(args.m1 + "/adapter_model.bin", 'rb')
-    data = pickle.load(file)
-    print(data)
+    file = load_file(args.m1 + "/adapter_model.bin", 'rb')
+    print(file)
 
     #sd1 = model1.named_parameters()
     #sd2 = model2.named_parameters()
