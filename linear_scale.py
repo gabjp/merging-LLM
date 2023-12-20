@@ -26,7 +26,7 @@ def main():
     sd1 = model1.named_parameters()
     sd2 = model2.named_parameters()
 
-    print(sd1)
+    print(list(sd1))
 
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
