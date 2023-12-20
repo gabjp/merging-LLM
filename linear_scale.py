@@ -30,7 +30,7 @@ def main():
 
     print("merging", flush=True)
 
-
+    print(np.linspace(args.start_p, args.end_p, num = len(list(sd1))))
     for (p,(name1,val1),(name2,val2)) in zip(np.linspace(args.start_p, args.end_p, num = len(list(sd1))),sd1,sd2):
         print(f"{name1} -- [{p}/{1-p}]")
         val1.mul_(p)
