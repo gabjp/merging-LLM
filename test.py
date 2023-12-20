@@ -38,7 +38,8 @@ def main():
     print(dir(type(config)))
     print(config.to_dict())
 
-    torch.load(args.m1 + "/adapter_model.bin")
+    a = torch.load(args.m1 + "/adapter_model.bin")
+    torch.load(a)
 
     #sd1 = model1.named_parameters()
     #sd2 = model2.named_parameters()
