@@ -33,6 +33,10 @@ def main():
     l1 = np.linspace(args.start_p, args.end_p, num = len(list(sd1)))
     l2 = list(sd1)
     l3 = list(sd2)
+
+    assert len(l1) == len(l2) == len(l3)
+
+    print(list(zip(l1,l2,l3))[0])
     
     for (p,(name1,val1),(name2,val2)) in zip(l1,l2,l3):
         print(f"{name1} -- [{p}/{1-p}]")
