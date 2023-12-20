@@ -36,6 +36,7 @@ def main():
 
     print(type(config))
     print(dir(type(config)))
+    print(config.to_dict())
 
     #sd1 = model1.named_parameters()
     #sd2 = model2.named_parameters()
