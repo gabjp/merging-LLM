@@ -29,7 +29,7 @@ def main():
     parser.add_argument("--start-head", type=int, default=0)
     args = parser.parse_args()
 
-    tokenizer1 = AutoTokenizer.from_pretrained(args.m1, use_fast=False)
+    tokenizer1 = AutoTokenizer.from_pretrained(args.m1, use_fast=False, hf_tokens='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')
     model1 = AutoModelForCausalLM.from_pretrained(args.m1)
 
     tokenizer2 = AutoTokenizer.from_pretrained(args.m2, use_fast=False)
