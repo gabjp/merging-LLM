@@ -28,20 +28,26 @@ def main():
     parser.add_argument("--start-head", type=int, default=0)
     args = parser.parse_args()
 
-    #tokenizer1 = AutoTokenizer.from_pretrained(args.m1, use_fast=False)
-    #model1 = AutoModelForCausalLM.from_pretrained(args.m1)
+    tokenizer1 = AutoTokenizer.from_pretrained(args.m1, use_fast=False)
+    model1 = AutoModelForCausalLM.from_pretrained(args.m1)
 
-    #tokenizer2 = AutoTokenizer.from_pretrained(args.m2, use_fast=False)
-    #model2 = AutoModelForCausalLM.from_pretrained(args.m2)
+    tokenizer2 = AutoTokenizer.from_pretrained(args.m2, use_fast=False)
+    model2 = AutoModelForCausalLM.from_pretrained(args.m2)
+
+    tokenizer3 = AutoTokenizer.from_pretrained(args.m3, use_fast=False)
+    model3 = AutoModelForCausalLM.from_pretrained(args.m3)
 
     config = PeftConfig.from_pretrained(args.m1)
 
-    print(type(config))
-    print(dir(type(config)))
-    print(config.to_dict())
+    sd1 = model1.named_parameters()
+    sd2 = model1.named_parameters()
+    sd3 = model1.named_parameters()
 
-    file = torch.load(args.m1 + "/adapter_model.bin")
-    print(file)
+    for ((name1,val1),(name2,val2), (name3,val3)) in zip(sd1,sd2, sd3):
+            val1.mul_(0.5)
+            val2.mul_(1-0.5)
+            val1.add_(val2)
+            print(torch.equal(val1, val3))
 
     #sd1 = model1.named_parameters()
     #sd2 = model2.named_parameters()
