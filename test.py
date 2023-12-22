@@ -49,6 +49,9 @@ def main():
             val2.mul_(1-0.5)
             val1.add_(val2)
             print(torch.equal(val1, val3))
+            print(name1)
+            print(val1.size)
+            print(val1)
 
     #sd1 = model1.named_parameters()
     #sd2 = model2.named_parameters()
