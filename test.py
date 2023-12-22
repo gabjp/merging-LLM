@@ -44,14 +44,13 @@ def main():
     sd2 = model1.named_parameters()
     sd3 = model1.named_parameters()
 
-    for ((name1,val1),(name2,val2), (name3,val3)) in zip(sd1,sd2, sd3):
-            val1.mul_(0.5)
-            val2.mul_(1-0.5)
-            val1.add_(val2)
-            print(torch.equal(val1, val3))
-            print(name1)
-            print(val1.size())
-            print(val1)
+    for name, val in sd1:
+        print(name)
+
+    print()
+
+    for name,val in sd3:
+        print(name)
 
     #sd1 = model1.named_parameters()
     #sd2 = model2.named_parameters()
