@@ -43,6 +43,7 @@ def main():
 
     for name, val in sd1:
         print(name)
+        print(val)
 
     print()
 
