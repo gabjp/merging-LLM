@@ -110,5 +110,14 @@ def pre_boolq():
     with open('data/boolq_post/test.json', 'w', encoding='utf-8') as f:
         json.dump(post_val, f, ensure_ascii=False, indent=4)
 
+def sample_sciq():
+    f = open('./data/sciq_post/train.json')
+    input_list = json.load(f)
+    out = random.sample(input_list, 500)
+
+    with open('data/sciq_post/train500.json', 'w', encoding='utf-8') as f:
+        json.dump(out, f, ensure_ascii=False, indent=4)
+
+        
 if __name__ == "__main__":
-    pre_boolq()
+    sample_sciq()
