@@ -31,25 +31,23 @@ def main():
     tokenizer1 = AutoTokenizer.from_pretrained(args.m1, use_fast=False, hf_tokens='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')
     model1 = AutoModelForCausalLM.from_pretrained(args.m1)
 
-    tokenizer2 = AutoTokenizer.from_pretrained(args.m2, use_fast=False)
-    model2 = AutoModelForCausalLM.from_pretrained(args.m2)
+    #tokenizer2 = AutoTokenizer.from_pretrained(args.m2, use_fast=False)
+    #model2 = AutoModelForCausalLM.from_pretrained(args.m2)
 
-    tokenizer3 = AutoTokenizer.from_pretrained(args.m3, use_fast=False)
-    model3 = AutoModelForCausalLM.from_pretrained(args.m3)
-
-    config = PeftConfig.from_pretrained(args.m1)
+    #tokenizer3 = AutoTokenizer.from_pretrained(args.m3, use_fast=False)
+    #model3 = AutoModelForCausalLM.from_pretrained(args.m3)
 
     sd1 = model1.named_parameters()
-    sd2 = model1.named_parameters()
-    sd3 = model1.named_parameters()
+    #sd2 = model1.named_parameters()
+    #sd3 = model1.named_parameters()
 
     for name, val in sd1:
         print(name)
 
     print()
 
-    for name,val in sd3:
-        print(name)
+    #for name,val in sd3:
+    #    print(name)
 
     #sd1 = model1.named_parameters()
     #sd2 = model2.named_parameters()
