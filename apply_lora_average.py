@@ -31,8 +31,8 @@ def main():
         if  ('self_attn.q_proj' not in name) and ('self_attn.v_proj' not in name):
             continue
 
-        str_a = name[:-6] + 'lora_A.weight'
-        str_b = name[:-6] + 'lora_B.weight'
+        str_a = 'base_model.model.' + name[:-6] + 'lora_A.weight'
+        str_b = 'base_model.model.' + name[:-6] + 'lora_B.weight'
         A1 = adapter1[str_a]
         B1 = adapter1[str_b]
         A2 = adapter2[str_a]
