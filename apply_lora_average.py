@@ -25,25 +25,17 @@ def main():
     print("merging", flush=True)
 
     print(adapter1)
-    return
 
 
-    for ((name1,val1),(name2,val2)) in zip(sd1,sd2):
-        if name1 == "model.embed_tokens.weight":
-            print(val1)
-            val1.mul_(args.p)
-            val2.mul_(1-args.p)
-            val1.add_(val2)
-        elif name1 == "lm_head.weight":
-            val1.mul_(args.p)
-            val2.mul_(1-args.p)
-            val1.add_(val2)
-        else:
-            val1.mul_(args.p)
-            val2.mul_(1-args.p)
-            val1.add_(val2)
+    for name,val in sd:
+        print(name)
+        continue
+        val1.mul_(args.p)
+        val2.mul_(1-args.p)
+        val1.add_(val2)
 
-
+    print(adapter1.keys())
+    return 
 
     print("merged")
 
