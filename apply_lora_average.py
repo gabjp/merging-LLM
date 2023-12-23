@@ -4,6 +4,7 @@ import os
 import torch
 import random
 import gc
+from peft import PeftModel 
 
 def main():
     parser = argparse.ArgumentParser()
@@ -16,20 +17,16 @@ def main():
 
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
-    tokenizer1 = AutoTokenizer.from_pretrained(args.llama_path, use_fast=False)
-    model1 = AutoModelForCausalLM.from_pretrained(args.llama_path)
+    tokenizer = AutoTokenizer.from_pretrained(args.llama_path, use_fast=False)
+    model = AutoModelForCausalLM.from_pretrained(args.llama_path).to(device)
 
-    tokenizer2 = AutoTokenizer.from_pretrained(args.llama_path, use_fast=False)
-    model2 = AutoModelForCausalLM.from_pretrained(args.llama_path)
+    model1 = PeftModel.from_pretrained(model, args.m1).merge_and_unload()
+    model2 = PeftModel.from_pretrained(model, args.m2).merge_and_unload()
 
-    model1.merge_and_unload()
-
-    sd1 = model1.named_parameters()
-
-    for name, val in sd1:
+    for name, val in model1.named_parameters():
         print(name)
         print(val)
-    
+
     return 
 
     adapter1 = torch.load(args.m1 + "/adapter_model.bin")
@@ -51,7 +48,7 @@ def main():
         B2 = adapter2[str_b].to(device)
 
         W1 = torch.transpose(torch.matmul(B1,A1), 0,1)
-        W2 = torch.transpose(torch.matmul(B2,A2),0,1)
+        W2 = torch.transpose(torch.matmul(B2,A2), 0,1)
 
         print(A1.size())
         print(B1.size())
