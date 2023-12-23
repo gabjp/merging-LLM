@@ -14,6 +14,8 @@ def main():
     parser.add_argument("--p", type=float, default=0.5)
     args = parser.parse_args()
 
+    device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+
     tokenizer = AutoTokenizer.from_pretrained(args.llama_path, use_fast=False)
     model = AutoModelForCausalLM.from_pretrained(args.llama_path).to(device)
 
@@ -23,8 +25,6 @@ def main():
     sd = model.named_parameters()
 
     print("merging", flush=True)
-
-    device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
     for name,val in sd:
         if  ('self_attn.q_proj' not in name) and ('self_attn.v_proj' not in name):
