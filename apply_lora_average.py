@@ -24,8 +24,6 @@ def main():
 
     print("merging", flush=True)
 
-    print(adapter1)
-
 
     for name,val in sd:
         if  ('self_attn.q_proj' not in name) and ('self_attn.v_proj' not in name):
@@ -40,6 +38,10 @@ def main():
 
         W1 = torch.matmul(A1,B1)
         W2 = torch.matmul(A2,B2)
+
+        print(A1.size())
+        print(B1.size())
+        print(W1.size())
 
         val.add_(W1, alpha=args.p)
         val.add_(W2, alpha=1-args.p)
