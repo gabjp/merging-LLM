@@ -23,7 +23,6 @@ def main():
     parser.add_argument("--save-path", type=str, default="")
     parser.add_argument("--m1", type=str, default="")
     parser.add_argument("--m2", type=str, default="")
-    parser.add_argument("--m2", type=str, default="")
     parser.add_argument("--start-p", type=float, default=0.5)
     parser.add_argument("--end-p", type=float, default=0.9)
     parser.add_argument("--start-head", type=int, default=0)
