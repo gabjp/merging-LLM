@@ -23,39 +23,15 @@ def main():
     model1 = PeftModel.from_pretrained(model, args.m1).merge_and_unload()
     model2 = PeftModel.from_pretrained(model, args.m2).merge_and_unload()
 
-    for name, val in model1.named_parameters():
-        print(name)
-        print(val)
+    sd1 = model1.named_parameters()
+    sd2 = model2.named_parameters()
 
-    return 
-
-    adapter1 = torch.load(args.m1 + "/adapter_model.bin")
-    adapter2 = torch.load(args.m2 + "/adapter_model.bin")
-
-    sd = model.named_parameters()
-
-    print("merging", flush=True)
-
-    for name,val in sd:
-        if  ('self_attn.q_proj' not in name) and ('self_attn.v_proj' not in name):
-            continue
-
-        str_a = 'base_model.model.' + name[:-6] + 'lora_A.weight'
-        str_b = 'base_model.model.' + name[:-6] + 'lora_B.weight'
-        A1 = adapter1[str_a].to(device)
-        B1 = adapter1[str_b].to(device)
-        A2 = adapter2[str_a].to(device)
-        B2 = adapter2[str_b].to(device)
-
-        W1 = torch.transpose(torch.matmul(B1,A1), 0,1)
-        W2 = torch.transpose(torch.matmul(B2,A2), 0,1)
-
-        print(A1.size())
-        print(B1.size())
-        print(W1.size())
-
-        val.add_(W1, alpha=args.p)
-        val.add_(W2, alpha=1-args.p)
+    for ((name1,val1),(name2,val2)) in zip(sd1,sd2):
+        print(f"merging {name1}")
+        val1.mul_(args.p)
+        val2.mul_(1-args.p)
+        val1.add_(val2)
+    
 
 
     print("merged")
@@ -65,7 +41,7 @@ def main():
 
     
     tokenizer.save_pretrained(args.save_path)
-    model.save_pretrained(args.save_path)
+    model1.save_pretrained(args.save_path)
 
 
 
