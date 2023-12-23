@@ -28,28 +28,31 @@ def main():
 
 
     for name,val in sd:
-        print(name)
-        continue
-        val1.mul_(args.p)
-        val2.mul_(1-args.p)
-        val1.add_(val2)
+        if  ('self_attn.q_proj' not in name) and ('self_attn.v_proj' not in name):
+            continue
 
-    print(adapter1.keys())
-    return 
+        str_a = name[:-6] + 'lora_A.weight'
+        str_b = name[:-6] + 'lora_B.weight'
+        A1 = adapter1[str_a]
+        B1 = adapter1[str_b]
+        A2 = adapter2[str_a]
+        B2 = adapter2[str_b]
+
+        W1 = torch.matmul(A1,B1)
+        W2 = torch.matmul(A2,B2)
+
+        val.add_(W1, alpha=args.p)
+        val.add_(W2, alpha=1-args.p)
+
 
     print("merged")
 
     if not os.path.exists(args.save_path):
         os.makedirs(args.save_path)
 
-    for (name1, val1) in model1.named_parameters():
-        if name1 == "model.embed_tokens.weight":
-            print(val1)
-        else:
-            continue
     
-    tokenizer2.save_pretrained(args.save_path)
-    model1.save_pretrained(args.save_path)
+    tokenizer.save_pretrained(args.save_path)
+    model.save_pretrained(args.save_path)
 
 
 
