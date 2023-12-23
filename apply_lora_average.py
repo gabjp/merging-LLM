@@ -15,7 +15,7 @@ def main():
     args = parser.parse_args()
 
     tokenizer = AutoTokenizer.from_pretrained(args.llama_path, use_fast=False)
-    model = AutoModelForCausalLM.from_pretrained(args.llama_path)
+    model = AutoModelForCausalLM.from_pretrained(args.llama_path).to(device)
 
     adapter1 = torch.load(args.m1 + "/adapter_model.bin")
     adapter2 = torch.load(args.m2 + "/adapter_model.bin")
