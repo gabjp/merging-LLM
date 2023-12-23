@@ -43,7 +43,7 @@ def main():
     sd2 = model1.named_parameters()
     #sd3 = model1.named_parameters()
 
-    for ((name1,val1),(name2,val2), (name3,val3)) in zip(sd1,sd2, sd3):
+    for ((name1,val1),(name2,val2)) in zip(sd1,sd2):
             print(name1)
             print(val1)
             val1.mul_(0.5)
