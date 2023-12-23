@@ -17,10 +17,10 @@ def main():
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
     tokenizer1 = AutoTokenizer.from_pretrained(args.llama_path, use_fast=False)
-    model1 = AutoModelForCausalLM.from_pretrained(args.llama_path).to(device)
+    model1 = AutoModelForCausalLM.from_pretrained(args.llama_path)
 
     tokenizer2 = AutoTokenizer.from_pretrained(args.llama_path, use_fast=False)
-    model2 = AutoModelForCausalLM.from_pretrained(args.llama_path).to(device)
+    model2 = AutoModelForCausalLM.from_pretrained(args.llama_path)
 
     model1.merge_and_unload()
 
