@@ -37,8 +37,8 @@ def main():
         A2 = adapter2[str_a].to(device)
         B2 = adapter2[str_b].to(device)
 
-        W1 = torch.matmul(B1,A1)
-        W2 = torch.matmul(B2,A2)
+        W1 = torch.transpose(torch.matmul(B1,A1))
+        W2 = torch.transpose(torch.matmul(B2,A2))
 
         print(A1.size())
         print(B1.size())
