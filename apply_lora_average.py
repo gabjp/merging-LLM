@@ -18,16 +18,19 @@ def main():
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
     tokenizer = AutoTokenizer.from_pretrained(args.llama_path, use_fast=False)
-    model = AutoModelForCausalLM.from_pretrained(args.llama_path).to(device)
+    llama1 = AutoModelForCausalLM.from_pretrained(args.llama_path)
+    llama2 = AutoModelForCausalLM.from_pretrained(args.llama_path)
 
-    model1 = PeftModel.from_pretrained(model, args.m1).merge_and_unload()
-    model2 = PeftModel.from_pretrained(model, args.m2).merge_and_unload()
+    model1 = PeftModel.from_pretrained(llama1, args.m1).merge_and_unload()
+    model2 = PeftModel.from_pretrained(llama2, args.m2).merge_and_unload()
 
     sd1 = model1.named_parameters()
     sd2 = model2.named_parameters()
 
     for ((name1,val1),(name2,val2)) in zip(sd1,sd2):
         print(f"merging {name1}")
+        print(val1)
+        print(val2)
         val1.mul_(args.p)
         val2.mul_(1-args.p)
         val1.add_(val2)
