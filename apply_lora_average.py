@@ -37,7 +37,7 @@ def main():
         B2 = adapter2[str_b]
 
         W1 = torch.matmul(B1,A1)
-        W2 = torch.mBtmul(B2,A2)
+        W2 = torch.matmul(B2,A2)
 
         print(A1.size())
         print(B1.size())
