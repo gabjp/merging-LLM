@@ -38,11 +38,11 @@ def main():
     #tokenizer3 = AutoTokenizer.from_pretrained(args.m3, use_fast=False)
     #model3 = AutoModelForCausalLM.from_pretrained(args.m3)
 
-    config = PeftConfig.from_pretrained(args.m1)
+    #config = PeftConfig.from_pretrained(args.m1)
 
     sd1 = model1.named_parameters()
     sd2 = model1.named_parameters()
-    sd3 = model1.named_parameters()
+    #sd3 = model1.named_parameters()
 
     for ((name1,val1),(name2,val2), (name3,val3)) in zip(sd1,sd2, sd3):
             print(name1)
