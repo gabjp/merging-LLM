@@ -64,6 +64,8 @@ def main():
 
     sciq_count = [int((true.lower() in pred.partition('\n')[0].lower()) and (len(pred.partition('\n')[0]) <= 2.5*len(true))) for true,pred in zip(sciq_answer, preds)]
     print(f"Sciq acc (contained first line and length): {sum(sciq_count)/len(sciq_count)}")
+
+    return
     
     print("evaluating pubmedqa")
     response = []
