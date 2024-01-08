@@ -12,12 +12,11 @@ def main():
     parser.add_argument("--llama-path", type=str, default="meta-llama/Llama-2-7b-hf")
     args = parser.parse_args()
 
-    device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
-    tokenizer = AutoTokenizer.from_pretrained(args.llama_path, use_fast=False)
     llama = AutoModelForCausalLM.from_pretrained(args.llama_path)
+    llama_base = AutoModelForCausalLM.from_pretrained(args.llama_path)
 
-    model = PeftModel.from_pretrained(llama, args.model_path).merge_and_unload()
+    model = PeftModel.from_pretrained(llama_base, args.model_path).merge_and_unload()
 
 
     sd_llama = llama.named_parameters()
@@ -27,7 +26,7 @@ def main():
         val_model.sub_(val_llama)
         print(name1)
         print(f"Sum: {torch.sum(torch.abs(val_model))}")
-        print(f"Mean {torch.mean(torch.abs(val_model))}")
+        print(f"Mean: {torch.mean(torch.abs(val_model))}")
         print()
 
 
