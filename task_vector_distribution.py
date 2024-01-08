@@ -17,7 +17,7 @@ def main():
     tokenizer = AutoTokenizer.from_pretrained(args.llama_path, use_fast=False)
     llama = AutoModelForCausalLM.from_pretrained(args.llama_path)
 
-    model = PeftModel.from_pretrained(llama, args.model-path).merge_and_unload()
+    model = PeftModel.from_pretrained(llama, args.model_path).merge_and_unload()
 
 
     sd_llama = llama.named_parameters()
