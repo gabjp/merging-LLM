@@ -1,0 +1,255 @@
+model.layers.0.self_attn.q_proj.weight
+Sum: 1049.0784912109375
+Mean: 6.252995081013069e-05
+
+model.layers.0.self_attn.v_proj.weight
+Sum: 1481.346923828125
+Mean: 8.829515718389302e-05
+
+model.layers.1.self_attn.q_proj.weight
+Sum: 1109.2564697265625
+Mean: 6.61168378428556e-05
+
+model.layers.1.self_attn.v_proj.weight
+Sum: 1523.9852294921875
+Mean: 9.0836598246824e-05
+
+model.layers.2.self_attn.q_proj.weight
+Sum: 1203.08984375
+Mean: 7.170974276959896e-05
+
+model.layers.2.self_attn.v_proj.weight
+Sum: 1586.385986328125
+Mean: 9.455597319174558e-05
+
+model.layers.3.self_attn.q_proj.weight
+Sum: 1274.10986328125
+Mean: 7.594286580570042e-05
+
+model.layers.3.self_attn.v_proj.weight
+Sum: 1476.5750732421875
+Mean: 8.801073272479698e-05
+
+model.layers.4.self_attn.q_proj.weight
+Sum: 1280.6806640625
+Mean: 7.633451605215669e-05
+
+model.layers.4.self_attn.v_proj.weight
+Sum: 1729.5211181640625
+Mean: 0.00010308749187970534
+
+model.layers.5.self_attn.q_proj.weight
+Sum: 1351.0382080078125
+Mean: 8.052815246628597e-05
+
+model.layers.5.self_attn.v_proj.weight
+Sum: 1663.7900390625
+Mean: 9.91696142591536e-05
+
+model.layers.6.self_attn.q_proj.weight
+Sum: 1473.500732421875
+Mean: 8.782748773228377e-05
+
+model.layers.6.self_attn.v_proj.weight
+Sum: 1642.59375
+Mean: 9.79062169790268e-05
+
+model.layers.7.self_attn.q_proj.weight
+Sum: 1235.239013671875
+Mean: 7.362598262261599e-05
+
+model.layers.7.self_attn.v_proj.weight
+Sum: 1917.8504638671875
+Mean: 0.00011431279563112184
+
+model.layers.8.self_attn.q_proj.weight
+Sum: 1259.381591796875
+Mean: 7.506499241571873e-05
+
+model.layers.8.self_attn.v_proj.weight
+Sum: 1634.653076171875
+Mean: 9.743291593622416e-05
+
+model.layers.9.self_attn.q_proj.weight
+Sum: 1347.027587890625
+Mean: 8.028910087887198e-05
+
+model.layers.9.self_attn.v_proj.weight
+Sum: 1555.5531005859375
+Mean: 9.271818998968229e-05
+
+model.layers.10.self_attn.q_proj.weight
+Sum: 1243.698974609375
+Mean: 7.413023558910936e-05
+
+model.layers.10.self_attn.v_proj.weight
+Sum: 1508.9100341796875
+Mean: 8.99380465853028e-05
+
+model.layers.11.self_attn.q_proj.weight
+Sum: 1276.4447021484375
+Mean: 7.608203304698691e-05
+
+model.layers.11.self_attn.v_proj.weight
+Sum: 1379.900634765625
+Mean: 8.224848716054112e-05
+
+model.layers.12.self_attn.q_proj.weight
+Sum: 1245.3270263671875
+Mean: 7.422727503580973e-05
+
+model.layers.12.self_attn.v_proj.weight
+Sum: 1298.56787109375
+Mean: 7.740067667327821e-05
+
+model.layers.13.self_attn.q_proj.weight
+Sum: 1283.0374755859375
+Mean: 7.647499296581373e-05
+
+model.layers.13.self_attn.v_proj.weight
+Sum: 1281.1806640625
+Mean: 7.636431837454438e-05
+
+model.layers.14.self_attn.q_proj.weight
+Sum: 1643.789306640625
+Mean: 9.797747770790011e-05
+
+model.layers.14.self_attn.v_proj.weight
+Sum: 1331.1241455078125
+Mean: 7.934118184493855e-05
+
+model.layers.15.self_attn.q_proj.weight
+Sum: 1483.0474853515625
+Mean: 8.839651854941621e-05
+
+model.layers.15.self_attn.v_proj.weight
+Sum: 1341.0927734375
+Mean: 7.993535837158561e-05
+
+model.layers.16.self_attn.q_proj.weight
+Sum: 1451.299560546875
+Mean: 8.6504194769077e-05
+
+model.layers.16.self_attn.v_proj.weight
+Sum: 1436.1851806640625
+Mean: 8.560330752516165e-05
+
+model.layers.17.self_attn.q_proj.weight
+Sum: 1673.18115234375
+Mean: 9.972936823032796e-05
+
+model.layers.17.self_attn.v_proj.weight
+Sum: 1449.068359375
+Mean: 8.637120481580496e-05
+
+model.layers.18.self_attn.q_proj.weight
+Sum: 1397.97900390625
+Mean: 8.332604193128645e-05
+
+model.layers.18.self_attn.v_proj.weight
+Sum: 1437.97265625
+Mean: 8.570984937250614e-05
+
+model.layers.19.self_attn.q_proj.weight
+Sum: 1861.351318359375
+Mean: 0.00011094518413301557
+
+model.layers.19.self_attn.v_proj.weight
+Sum: 1580.3436279296875
+Mean: 9.419582056580111e-05
+
+model.layers.20.self_attn.q_proj.weight
+Sum: 2222.6357421875
+Mean: 0.00013247941387817264
+
+model.layers.20.self_attn.v_proj.weight
+Sum: 1854.435791015625
+Mean: 0.00011053298658225685
+
+model.layers.21.self_attn.q_proj.weight
+Sum: 1628.9716796875
+Mean: 9.709427831694484e-05
+
+model.layers.21.self_attn.v_proj.weight
+Sum: 1561.450927734375
+Mean: 9.306972788181156e-05
+
+model.layers.22.self_attn.q_proj.weight
+Sum: 1494.470458984375
+Mean: 8.907738083507866e-05
+
+model.layers.22.self_attn.v_proj.weight
+Sum: 1816.0152587890625
+Mean: 0.00010824294440681115
+
+model.layers.23.self_attn.q_proj.weight
+Sum: 1448.70263671875
+Mean: 8.634940604679286e-05
+
+model.layers.23.self_attn.v_proj.weight
+Sum: 1709.2874755859375
+Mean: 0.00010188147280132398
+
+model.layers.24.self_attn.q_proj.weight
+Sum: 1533.063720703125
+Mean: 9.137771849054843e-05
+
+model.layers.24.self_attn.v_proj.weight
+Sum: 1787.121337890625
+Mean: 0.00010652073251549155
+
+model.layers.25.self_attn.q_proj.weight
+Sum: 1334.6180419921875
+Mean: 7.95494343037717e-05
+
+model.layers.25.self_attn.v_proj.weight
+Sum: 1597.892333984375
+Mean: 9.524180495645851e-05
+
+model.layers.26.self_attn.q_proj.weight
+Sum: 1417.4962158203125
+Mean: 8.448935841443017e-05
+
+model.layers.26.self_attn.v_proj.weight
+Sum: 1702.2288818359375
+Mean: 0.00010146074782824144
+
+model.layers.27.self_attn.q_proj.weight
+Sum: 1462.09228515625
+Mean: 8.714749128557742e-05
+
+model.layers.27.self_attn.v_proj.weight
+Sum: 1719.4549560546875
+Mean: 0.00010248750186292455
+
+model.layers.28.self_attn.q_proj.weight
+Sum: 2076.91796875
+Mean: 0.0001237939577549696
+
+model.layers.28.self_attn.v_proj.weight
+Sum: 2163.337890625
+Mean: 0.00012894498649984598
+
+model.layers.29.self_attn.q_proj.weight
+Sum: 2411.449462890625
+Mean: 0.00014373358862940222
+
+model.layers.29.self_attn.v_proj.weight
+Sum: 2199.569091796875
+Mean: 0.0001311045343754813
+
+model.layers.30.self_attn.q_proj.weight
+Sum: 2086.010009765625
+Mean: 0.0001243358856299892
+
+model.layers.30.self_attn.v_proj.weight
+Sum: 2072.14892578125
+Mean: 0.00012350970064289868
+
+model.layers.31.self_attn.q_proj.weight
+Sum: 2018.56396484375
+Mean: 0.00012031578808091581
+
+model.layers.31.self_attn.v_proj.weight
+Sum: 1830.7060546875
+Mean: 0.00010911858407780528
