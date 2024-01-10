@@ -1,0 +1,639 @@
+model.layers.0.self_attn.q_proj.weight
+Sum: 726.5144653320312
+Mean: 4.330363663029857e-05
+
+model.layers.0.self_attn.v_proj.weight
+Sum: 1146.399169921875
+Mean: 6.833071529399604e-05
+
+model.layers.0.mlp.gate_proj.weight
+Sum: 2972.208740234375
+Mean: 6.591904821107164e-05
+
+model.layers.0.mlp.up_proj.weight
+Sum: 3151.97021484375
+Mean: 6.99058873578906e-05
+
+model.layers.0.mlp.down_proj.weight
+Sum: 2082.419921875
+Mean: 4.6184894017642364e-05
+
+model.layers.1.self_attn.q_proj.weight
+Sum: 947.68408203125
+Mean: 5.6486373068764806e-05
+
+model.layers.1.self_attn.v_proj.weight
+Sum: 1039.5235595703125
+Mean: 6.196043250383809e-05
+
+model.layers.1.mlp.gate_proj.weight
+Sum: 2937.76904296875
+Mean: 6.515523273264989e-05
+
+model.layers.1.mlp.up_proj.weight
+Sum: 3050.414306640625
+Mean: 6.765352736692876e-05
+
+model.layers.1.mlp.down_proj.weight
+Sum: 1971.8165283203125
+Mean: 4.3731877667596564e-05
+
+model.layers.2.self_attn.q_proj.weight
+Sum: 956.8483276367188
+Mean: 5.7032604672713205e-05
+
+model.layers.2.self_attn.v_proj.weight
+Sum: 1159.4835205078125
+Mean: 6.911060336278751e-05
+
+model.layers.2.mlp.gate_proj.weight
+Sum: 3091.036376953125
+Mean: 6.85544655425474e-05
+
+model.layers.2.mlp.up_proj.weight
+Sum: 3020.57275390625
+Mean: 6.69916917104274e-05
+
+model.layers.2.mlp.down_proj.weight
+Sum: 2007.4530029296875
+Mean: 4.452223947737366e-05
+
+model.layers.3.self_attn.q_proj.weight
+Sum: 1044.724365234375
+Mean: 6.227042467799038e-05
+
+model.layers.3.self_attn.v_proj.weight
+Sum: 1151.22900390625
+Mean: 6.861859583295882e-05
+
+model.layers.3.mlp.gate_proj.weight
+Sum: 3000.08837890625
+Mean: 6.653738091699779e-05
+
+model.layers.3.mlp.up_proj.weight
+Sum: 2887.31494140625
+Mean: 6.403623410733417e-05
+
+model.layers.3.mlp.down_proj.weight
+Sum: 2056.57861328125
+Mean: 4.561177047435194e-05
+
+model.layers.4.self_attn.q_proj.weight
+Sum: 925.05810546875
+Mean: 5.513775977306068e-05
+
+model.layers.4.self_attn.v_proj.weight
+Sum: 1104.3841552734375
+Mean: 6.582642527064309e-05
+
+model.layers.4.mlp.gate_proj.weight
+Sum: 2941.519287109375
+Mean: 6.523840420413762e-05
+
+model.layers.4.mlp.up_proj.weight
+Sum: 3002.611328125
+Mean: 6.659333303105086e-05
+
+model.layers.4.mlp.down_proj.weight
+Sum: 2034.910888671875
+Mean: 4.513121530180797e-05
+
+model.layers.5.self_attn.q_proj.weight
+Sum: 1034.6790771484375
+Mean: 6.167167884996161e-05
+
+model.layers.5.self_attn.v_proj.weight
+Sum: 1119.187744140625
+Mean: 6.670878792647272e-05
+
+model.layers.5.mlp.gate_proj.weight
+Sum: 2878.5498046875
+Mean: 6.384183507179841e-05
+
+model.layers.5.mlp.up_proj.weight
+Sum: 2869.5380859375
+Mean: 6.364197179209441e-05
+
+model.layers.5.mlp.down_proj.weight
+Sum: 1764.5771484375
+Mean: 3.913562613888644e-05
+
+model.layers.6.self_attn.q_proj.weight
+Sum: 1192.219970703125
+Mean: 7.106184784788638e-05
+
+model.layers.6.self_attn.v_proj.weight
+Sum: 1081.5355224609375
+Mean: 6.446454062825069e-05
+
+model.layers.6.mlp.gate_proj.weight
+Sum: 2968.8359375
+Mean: 6.584424409084022e-05
+
+model.layers.6.mlp.up_proj.weight
+Sum: 2885.671875
+Mean: 6.399979611160234e-05
+
+model.layers.6.mlp.down_proj.weight
+Sum: 1765.0430908203125
+Mean: 3.914595799869858e-05
+
+model.layers.7.self_attn.q_proj.weight
+Sum: 936.5831298828125
+Mean: 5.582470475928858e-05
+
+model.layers.7.self_attn.v_proj.weight
+Sum: 1470.843017578125
+Mean: 8.766907558310777e-05
+
+model.layers.7.mlp.gate_proj.weight
+Sum: 2968.78857421875
+Mean: 6.584319635294378e-05
+
+model.layers.7.mlp.up_proj.weight
+Sum: 2578.5146484375
+Mean: 5.7187517086276785e-05
+
+model.layers.7.mlp.down_proj.weight
+Sum: 1697.760498046875
+Mean: 3.7653735489584506e-05
+
+model.layers.8.self_attn.q_proj.weight
+Sum: 921.0375366210938
+Mean: 5.489811519510113e-05
+
+model.layers.8.self_attn.v_proj.weight
+Sum: 1090.0023193359375
+Mean: 6.496920104837045e-05
+
+model.layers.8.mlp.gate_proj.weight
+Sum: 2944.011962890625
+Mean: 6.529368693009019e-05
+
+model.layers.8.mlp.up_proj.weight
+Sum: 2836.322265625
+Mean: 6.290529563557357e-05
+
+model.layers.8.mlp.down_proj.weight
+Sum: 1830.18017578125
+Mean: 4.0590599382994696e-05
+
+model.layers.9.self_attn.q_proj.weight
+Sum: 1076.1724853515625
+Mean: 6.414487870642915e-05
+
+model.layers.9.self_attn.v_proj.weight
+Sum: 1084.7850341796875
+Mean: 6.465822661994025e-05
+
+model.layers.9.mlp.gate_proj.weight
+Sum: 2685.86328125
+Mean: 5.9568345022853464e-05
+
+model.layers.9.mlp.up_proj.weight
+Sum: 2900.525390625
+Mean: 6.43292223685421e-05
+
+model.layers.9.mlp.down_proj.weight
+Sum: 1717.374755859375
+Mean: 3.8088750443421304e-05
+
+model.layers.10.self_attn.q_proj.weight
+Sum: 924.522216796875
+Mean: 5.5105818319134414e-05
+
+model.layers.10.self_attn.v_proj.weight
+Sum: 1006.94970703125
+Mean: 6.0018879594281316e-05
+
+model.layers.10.mlp.gate_proj.weight
+Sum: 2751.60595703125
+Mean: 6.1026417824905366e-05
+
+model.layers.10.mlp.up_proj.weight
+Sum: 2754.409423828125
+Mean: 6.108859088271856e-05
+
+model.layers.10.mlp.down_proj.weight
+Sum: 1770.177978515625
+Mean: 3.925984492525458e-05
+
+model.layers.11.self_attn.q_proj.weight
+Sum: 955.5059814453125
+Mean: 5.695259460480884e-05
+
+model.layers.11.self_attn.v_proj.weight
+Sum: 915.0504760742188
+Mean: 5.454125857795589e-05
+
+model.layers.11.mlp.gate_proj.weight
+Sum: 2653.444580078125
+Mean: 5.884934580535628e-05
+
+model.layers.11.mlp.up_proj.weight
+Sum: 2698.46044921875
+Mean: 5.9847730881301686e-05
+
+model.layers.11.mlp.down_proj.weight
+Sum: 1738.14208984375
+Mean: 3.854933675029315e-05
+
+model.layers.12.self_attn.q_proj.weight
+Sum: 931.324462890625
+Mean: 5.551126378122717e-05
+
+model.layers.12.self_attn.v_proj.weight
+Sum: 912.9156494140625
+Mean: 5.441401299322024e-05
+
+model.layers.12.mlp.gate_proj.weight
+Sum: 2441.136474609375
+Mean: 5.414067709352821e-05
+
+model.layers.12.mlp.up_proj.weight
+Sum: 2340.28076171875
+Mean: 5.190385127207264e-05
+
+model.layers.12.mlp.down_proj.weight
+Sum: 1578.059814453125
+Mean: 3.49989568348974e-05
+
+model.layers.13.self_attn.q_proj.weight
+Sum: 1012.5308837890625
+Mean: 6.0351543652359396e-05
+
+model.layers.13.self_attn.v_proj.weight
+Sum: 844.4270629882812
+Mean: 5.033177512814291e-05
+
+model.layers.13.mlp.gate_proj.weight
+Sum: 2566.876953125
+Mean: 5.692940976587124e-05
+
+model.layers.13.mlp.up_proj.weight
+Sum: 2718.04638671875
+Mean: 6.028211646480486e-05
+
+model.layers.13.mlp.down_proj.weight
+Sum: 1595.5465087890625
+Mean: 3.538678356562741e-05
+
+model.layers.14.self_attn.q_proj.weight
+Sum: 1084.355224609375
+Mean: 6.463260797318071e-05
+
+model.layers.14.self_attn.v_proj.weight
+Sum: 840.8490600585938
+Mean: 5.011850953451358e-05
+
+model.layers.14.mlp.gate_proj.weight
+Sum: 2655.785888671875
+Mean: 5.8901274314848706e-05
+
+model.layers.14.mlp.up_proj.weight
+Sum: 2526.66943359375
+Mean: 5.603766840067692e-05
+
+model.layers.14.mlp.down_proj.weight
+Sum: 1680.2850341796875
+Mean: 3.7266156141413376e-05
+
+model.layers.15.self_attn.q_proj.weight
+Sum: 1022.7924194335938
+Mean: 6.096317883930169e-05
+
+model.layers.15.self_attn.v_proj.weight
+Sum: 880.071044921875
+Mean: 5.2456322009675205e-05
+
+model.layers.15.mlp.gate_proj.weight
+Sum: 2419.882568359375
+Mean: 5.366930054151453e-05
+
+model.layers.15.mlp.up_proj.weight
+Sum: 2668.71337890625
+Mean: 5.918798706261441e-05
+
+model.layers.15.mlp.down_proj.weight
+Sum: 1510.84619140625
+Mean: 3.3508262276882306e-05
+
+model.layers.16.self_attn.q_proj.weight
+Sum: 995.5982055664062
+Mean: 5.934227738180198e-05
+
+model.layers.16.self_attn.v_proj.weight
+Sum: 921.5734252929688
+Mean: 5.493005664902739e-05
+
+model.layers.16.mlp.gate_proj.weight
+Sum: 2503.684814453125
+Mean: 5.552790389629081e-05
+
+model.layers.16.mlp.up_proj.weight
+Sum: 2511.353515625
+Mean: 5.5697983043501154e-05
+
+model.layers.16.mlp.down_proj.weight
+Sum: 1600.3675537109375
+Mean: 3.5493707400746644e-05
+
+model.layers.17.self_attn.q_proj.weight
+Sum: 1070.9932861328125
+Mean: 6.383617437677458e-05
+
+model.layers.17.self_attn.v_proj.weight
+Sum: 968.5951538085938
+Mean: 5.7732770073926076e-05
+
+model.layers.17.mlp.gate_proj.weight
+Sum: 3059.959228515625
+Mean: 6.786522135371342e-05
+
+model.layers.17.mlp.up_proj.weight
+Sum: 2800.732421875
+Mean: 6.211596337379888e-05
+
+model.layers.17.mlp.down_proj.weight
+Sum: 1681.407958984375
+Mean: 3.7291061744326726e-05
+
+model.layers.18.self_attn.q_proj.weight
+Sum: 1014.693115234375
+Mean: 6.048042268957943e-05
+
+model.layers.18.self_attn.v_proj.weight
+Sum: 1030.4149169921875
+Mean: 6.141751509858295e-05
+
+model.layers.18.mlp.gate_proj.weight
+Sum: 3424.54541015625
+Mean: 7.595118950121105e-05
+
+model.layers.18.mlp.up_proj.weight
+Sum: 3152.07080078125
+Mean: 6.990811380092055e-05
+
+model.layers.18.mlp.down_proj.weight
+Sum: 1851.615478515625
+Mean: 4.106600317754783e-05
+
+model.layers.19.self_attn.q_proj.weight
+Sum: 1282.29443359375
+Mean: 7.643070421181619e-05
+
+model.layers.19.self_attn.v_proj.weight
+Sum: 1039.70703125
+Mean: 6.197136826813221e-05
+
+model.layers.19.mlp.gate_proj.weight
+Sum: 3479.314208984375
+Mean: 7.71658742451109e-05
+
+model.layers.19.mlp.up_proj.weight
+Sum: 3559.150146484375
+Mean: 7.893651491031051e-05
+
+model.layers.19.mlp.down_proj.weight
+Sum: 1842.311767578125
+Mean: 4.085966065758839e-05
+
+model.layers.20.self_attn.q_proj.weight
+Sum: 1564.025634765625
+Mean: 9.322319237980992e-05
+
+model.layers.20.self_attn.v_proj.weight
+Sum: 1113.0709228515625
+Mean: 6.63441969663836e-05
+
+model.layers.20.mlp.gate_proj.weight
+Sum: 3145.6484375
+Mean: 6.976567965466529e-05
+
+model.layers.20.mlp.up_proj.weight
+Sum: 2898.15380859375
+Mean: 6.427662447094917e-05
+
+model.layers.20.mlp.down_proj.weight
+Sum: 1895.9898681640625
+Mean: 4.20501601183787e-05
+
+model.layers.21.self_attn.q_proj.weight
+Sum: 1115.8984375
+Mean: 6.651272997260094e-05
+
+model.layers.21.self_attn.v_proj.weight
+Sum: 1053.5933837890625
+Mean: 6.279905937844887e-05
+
+model.layers.21.mlp.gate_proj.weight
+Sum: 3774.576416015625
+Mean: 8.371433796128258e-05
+
+model.layers.21.mlp.up_proj.weight
+Sum: 3377.046630859375
+Mean: 7.489773270208389e-05
+
+model.layers.21.mlp.down_proj.weight
+Sum: 1949.6114501953125
+Mean: 4.323940447648056e-05
+
+model.layers.22.self_attn.q_proj.weight
+Sum: 1042.926513671875
+Mean: 6.216326437424868e-05
+
+model.layers.22.self_attn.v_proj.weight
+Sum: 1162.0904541015625
+Mean: 6.926598871359602e-05
+
+model.layers.22.mlp.gate_proj.weight
+Sum: 3547.932373046875
+Mean: 7.868772081565112e-05
+
+model.layers.22.mlp.up_proj.weight
+Sum: 3207.66943359375
+Mean: 7.114120671758428e-05
+
+model.layers.22.mlp.down_proj.weight
+Sum: 1900.814453125
+Mean: 4.215716035105288e-05
+
+model.layers.23.self_attn.q_proj.weight
+Sum: 1091.2977294921875
+Mean: 6.504641351057217e-05
+
+model.layers.23.self_attn.v_proj.weight
+Sum: 1090.71826171875
+Mean: 6.501187453977764e-05
+
+model.layers.23.mlp.gate_proj.weight
+Sum: 3117.07080078125
+Mean: 6.913187098689377e-05
+
+model.layers.23.mlp.up_proj.weight
+Sum: 3097.86962890625
+Mean: 6.870601646369323e-05
+
+model.layers.23.mlp.down_proj.weight
+Sum: 1886.6197509765625
+Mean: 4.184234421700239e-05
+
+model.layers.24.self_attn.q_proj.weight
+Sum: 1072.4991455078125
+Mean: 6.392593058990315e-05
+
+model.layers.24.self_attn.v_proj.weight
+Sum: 1109.740478515625
+Mean: 6.614568701479584e-05
+
+model.layers.24.mlp.gate_proj.weight
+Sum: 3036.714599609375
+Mean: 6.734969065291807e-05
+
+model.layers.24.mlp.up_proj.weight
+Sum: 3147.344970703125
+Mean: 6.980330363148823e-05
+
+model.layers.24.mlp.down_proj.weight
+Sum: 1955.8056640625
+Mean: 4.3376781832193956e-05
+
+model.layers.25.self_attn.q_proj.weight
+Sum: 983.35400390625
+Mean: 5.8612466091290116e-05
+
+model.layers.25.self_attn.v_proj.weight
+Sum: 1010.798828125
+Mean: 6.024830508977175e-05
+
+model.layers.25.mlp.gate_proj.weight
+Sum: 3186.698974609375
+Mean: 7.067611295497045e-05
+
+model.layers.25.mlp.up_proj.weight
+Sum: 3165.0771484375
+Mean: 7.019657641649246e-05
+
+model.layers.25.mlp.down_proj.weight
+Sum: 1905.68017578125
+Mean: 4.226507371640764e-05
+
+model.layers.26.self_attn.q_proj.weight
+Sum: 1003.9769287109375
+Mean: 5.984168819850311e-05
+
+model.layers.26.self_attn.v_proj.weight
+Sum: 1050.81787109375
+Mean: 6.263362593017519e-05
+
+model.layers.26.mlp.gate_proj.weight
+Sum: 3611.702392578125
+Mean: 8.010204328456894e-05
+
+model.layers.26.mlp.up_proj.weight
+Sum: 3208.1513671875
+Mean: 7.115189509931952e-05
+
+model.layers.26.mlp.down_proj.weight
+Sum: 1831.3359375
+Mean: 4.0616232581669465e-05
+
+model.layers.27.self_attn.q_proj.weight
+Sum: 1095.765625
+Mean: 6.531272083520889e-05
+
+model.layers.27.self_attn.v_proj.weight
+Sum: 1127.79296875
+Mean: 6.722169928252697e-05
+
+model.layers.27.mlp.gate_proj.weight
+Sum: 3454.325439453125
+Mean: 7.661166455363855e-05
+
+model.layers.27.mlp.up_proj.weight
+Sum: 3045.08349609375
+Mean: 6.753530033165589e-05
+
+model.layers.27.mlp.down_proj.weight
+Sum: 1995.824951171875
+Mean: 4.426435043569654e-05
+
+model.layers.28.self_attn.q_proj.weight
+Sum: 1414.822265625
+Mean: 8.432997856289148e-05
+
+model.layers.28.self_attn.v_proj.weight
+Sum: 1292.65087890625
+Mean: 7.704799645580351e-05
+
+model.layers.28.mlp.gate_proj.weight
+Sum: 4047.005615234375
+Mean: 8.975640230346471e-05
+
+model.layers.28.mlp.up_proj.weight
+Sum: 3484.5830078125
+Mean: 7.728272612439469e-05
+
+model.layers.28.mlp.down_proj.weight
+Sum: 1839.5438232421875
+Mean: 4.079827340319753e-05
+
+model.layers.29.self_attn.q_proj.weight
+Sum: 1806.7747802734375
+Mean: 0.00010769216896733269
+
+model.layers.29.self_attn.v_proj.weight
+Sum: 1176.0811767578125
+Mean: 7.009990076767281e-05
+
+model.layers.29.mlp.gate_proj.weight
+Sum: 3267.789794921875
+Mean: 7.247458415804431e-05
+
+model.layers.29.mlp.up_proj.weight
+Sum: 3164.544189453125
+Mean: 7.018475298536941e-05
+
+model.layers.29.mlp.down_proj.weight
+Sum: 1774.154052734375
+Mean: 3.934802589355968e-05
+
+model.layers.30.self_attn.q_proj.weight
+Sum: 1591.4901123046875
+Mean: 9.486020280746743e-05
+
+model.layers.30.self_attn.v_proj.weight
+Sum: 1270.8951416015625
+Mean: 7.57512534619309e-05
+
+model.layers.30.mlp.gate_proj.weight
+Sum: 3929.06591796875
+Mean: 8.714068098925054e-05
+
+model.layers.30.mlp.up_proj.weight
+Sum: 3303.49658203125
+Mean: 7.326650666072965e-05
+
+model.layers.30.mlp.down_proj.weight
+Sum: 1844.202392578125
+Mean: 4.090159200131893e-05
+
+model.layers.31.self_attn.q_proj.weight
+Sum: 1402.1954345703125
+Mean: 8.357736078323796e-05
+
+model.layers.31.self_attn.v_proj.weight
+Sum: 1024.4130859375
+Mean: 6.10597780905664e-05
+
+model.layers.31.mlp.gate_proj.weight
+Sum: 2907.71337890625
+Mean: 6.448863859986886e-05
+
+model.layers.31.mlp.up_proj.weight
+Sum: 2883.01806640625
+Mean: 6.394093361450359e-05
+
+model.layers.31.mlp.down_proj.weight
+Sum: 1657.36865234375
+Mean: 3.6757905036211014e-05
