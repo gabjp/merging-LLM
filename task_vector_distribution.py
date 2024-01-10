@@ -9,6 +9,7 @@ from peft import PeftModel
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--model-path", type=str, default="")
+    parser.add_argument("--v", type=int, default=0)
     parser.add_argument("--llama-path", type=str, default="meta-llama/Llama-2-7b-hf")
     args = parser.parse_args()
 
@@ -24,7 +25,7 @@ def main():
 
     for ((name1,val_llama),(name2,val_model)) in zip(sd_llama,sd_model):
         val_model.sub_(val_llama)
-        if torch.sum(torch.abs(val_model)) != 0:
+        if torch.sum(torch.abs(val_model)) != 0 or args.v == 1:
             print(name1)
             print(f"Sum: {torch.sum(torch.abs(val_model))}")
             print(f"Mean: {torch.mean(torch.abs(val_model))}")
