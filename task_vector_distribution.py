@@ -24,7 +24,7 @@ def main():
 
     for ((name1,val_llama),(name2,val_model)) in zip(sd_llama,sd_model):
         val_model.sub_(val_llama)
-        if torch.sum(torch.abs(val_model)) != 0 or True:
+        if torch.sum(torch.abs(val_model)) != 0:
             print(name1)
             print(f"Sum: {torch.sum(torch.abs(val_model))}")
             print(f"Mean: {torch.mean(torch.abs(val_model))}")
