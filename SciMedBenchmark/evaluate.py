@@ -59,7 +59,7 @@ def main():
             decoded = tokenizer.decode(out, skip_special_tokens=True)
             #print(decoded)
             response.append(decoded)
-    preds = [out[i:] for out, i in zip(response, sciq_lens)]
+    preds = [out[i-2:] for out, i in zip(response, sciq_lens)]
     print(preds)
 
     sciq_count = [int((true.lower() in pred.partition('\n')[0].lower()) and (len(pred.partition('\n')[0]) <= 2.5*len(true))) for true,pred in zip(sciq_answer, preds)]
