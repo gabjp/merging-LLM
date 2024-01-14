@@ -39,11 +39,6 @@ def main():
     if not os.path.exists(args.save_path):
         os.makedirs(args.save_path)
 
-    for (name1, val1) in model1.named_parameters():
-        if name1 == "model.embed_tokens.weight":
-            print(val1)
-        else:
-            continue
     
     tokenizer2.save_pretrained(args.save_path)
     model1.save_pretrained(args.save_path)
