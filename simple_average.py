@@ -11,7 +11,6 @@ def main():
     parser.add_argument("--m1", type=str, default="")
     parser.add_argument("--m2", type=str, default="")
     parser.add_argument("--p", type=float, default=0.5)
-    parser.add_argument("--merge-embeddings", type=int, default=0)
     args = parser.parse_args()
 
     tokenizer1 = AutoTokenizer.from_pretrained(args.m1, use_fast=False)
@@ -29,42 +28,10 @@ def main():
     print("merging", flush=True)
 
 
-    # Use vicuna
-
-    if args.merge_embeddings == 0:
-        pass
-
-        #for key in keys:
-        #    print(key, flush=True)
-        #    if key == "model.embed_tokens.weight":
-        #        continue
-        #    elif key == "lm_head.weight":
-        #        continue
-        #    else:
-        #        sd1[key].mul_(args.p)
-        #        sd2[key].mul_(1-args.p)
-        #        sd1[key].add_(sd2[key])
-
-
-    # drop and merge
-
-    else:
-
-        for ((name1,val1),(name2,val2)) in zip(sd1,sd2):
-            if name1 == "model.embed_tokens.weight":
-                print(val1)
-                val1.mul_(args.p)
-                val2.mul_(1-args.p)
-                val1.add_(val2)
-            elif name1 == "lm_head.weight":
-                val1.mul_(args.p)
-                val2.mul_(1-args.p)
-                val1.add_(val2)
-            else:
-                val1.mul_(args.p)
-                val2.mul_(1-args.p)
-                val1.add_(val2)
-
+    for ((name1,val1),(name2,val2)) in zip(sd1,sd2):
+        val1.mul_(args.p)
+        val2.mul_(1-args.p)
+        val1.add_(val2)
 
 
     print("merged")
@@ -80,8 +47,6 @@ def main():
     
     tokenizer2.save_pretrained(args.save_path)
     model1.save_pretrained(args.save_path)
-
-
 
 
 if __name__ == "__main__":
