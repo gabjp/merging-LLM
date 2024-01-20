@@ -27,11 +27,19 @@ def main():
     print("MERGED")
     for (name, val) in sd_model:
         print(name)
+        if 'transformer.h.0.self_attention.query_key_value.weight' in name:
+            print(val)
+            print(name)
+            break
 
     print()
     print("BASE")
     for (name, val) in sd_llama:
         print(name)
+        if 'transformer.h.0.self_attention.query_key_value.weight' in name:
+            print(val)
+            print(name)
+            break
 
     #for ((name1,val_llama),(name2,val_model)) in zip(sd_llama,sd_model):
 
