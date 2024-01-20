@@ -17,8 +17,9 @@ def main():
     llama = AutoModelForCausalLM.from_pretrained(args.llama_path)
     llama_base = AutoModelForCausalLM.from_pretrained(args.llama_path)
 
-    model = PeftModel.from_pretrained(llama_base, args.model_path).merge_adapter()
+    model = PeftModel.from_pretrained(llama_base, args.model_path)
 
+    model.merge_adapter()
 
     sd_llama = llama.named_parameters()
     sd_model = model.named_parameters()
