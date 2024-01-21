@@ -27,9 +27,9 @@ def main():
     model1.merge_adapter()
     model2.merge_adapter()
 
-    sd_model1_unmerged = model1_unmerged.named_parameters()
-    sd_model1 = model1.named_parameters()
-    sd_model2 = model2.named_parameters()
+    sd_model1_unmerged = list(model1_unmerged.named_parameters())
+    sd_model1 = list(model1.named_parameters())
+    sd_model2 = list(model2.named_parameters())
 
 
     m1_sums = []
