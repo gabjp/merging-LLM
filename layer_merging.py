@@ -35,7 +35,7 @@ def main():
     m1_sums = []
     m2_sums = []
 
-    for ((n,v1),(_,v2), (_,v3)) in zip(sd_model1_unmerged,sd_model1, sd_model2):
+    for ((n,v1),(_,v2), (_,v3)) in zip(sd_model1_unmerged, sd_model1, sd_model2):
         delta_1 = torch.sum(torch.abs(v2-v1))
         delta_2 = torch.sum(torch.abs(v3-v1))
         if delta_1 != 0 and delta_2 != 0:
@@ -51,11 +51,8 @@ def main():
     layers_rank_m2 = {}
 
     for i in range(len(m1_sums)):
-        layers_rank_m1[m1_sums[1]] = i+1
-        layers_rank_m2[m1_sums[1]] = i+1
-
-
-    it = zip(sd_model1_unmerged,sd_model1, sd_model2)
+        layers_rank_m1[m1_sums[i]] = i+1
+        layers_rank_m2[m1_sums[i]] = i+1
 
     print(m1_sums)
     print(m2_sums)
@@ -63,9 +60,10 @@ def main():
     print(layers_rank_m1)
     print(layers_rank_m2)
 
+    it = zip(sd_model1_unmerged, sd_model1, sd_model2)
+
     for ((n,v1),(_,v2), (_,v3)) in it:
         if 'query_key_value.weight' in n or 'dense_h_to_4h.weight' in n or 'dense_4h_to_h.weight' in n:
-            # COMPARE DELTA AND MERGE NEXT 2 MATRICES (LORA ADAPTERS)
 
             p = layers_rank_m1[n] / (layers_rank_m1[n] + layers_rank_m2[n])
 
