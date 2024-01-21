@@ -51,8 +51,8 @@ def main():
     layers_rank_m2 = {}
 
     for i in range(len(m1_sums)):
-        layers_rank_m1[m1_sums[i]] = i+1
-        layers_rank_m2[m1_sums[i]] = i+1
+        layers_rank_m1[m1_sums[i][1]] = i+1
+        layers_rank_m2[m1_sums[i][1]] = i+1
 
     print(m1_sums)
     print(m2_sums)
