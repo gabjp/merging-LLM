@@ -31,36 +31,58 @@ def main():
     sd_model1 = model1.named_parameters()
     sd_model2 = model2.named_parameters()
 
+
+    m1_sums = []
+    m2_sums = []
+
+    for ((n,v1),(_,v2), (_,v3)) in zip(sd_model1_unmerged,sd_model1, sd_model2):
+        delta_1 = torch.sum(torch.abs(v2-v1))
+        delta_2 = torch.sum(torch.abs(v3-v1))
+        if delta_1 != 0 and delta_2 != 0:
+            m1_sums.append((delta_1,n))
+            m2_sums.append((delta_2,n))
+    
+    print(len(m1_sums))
+
+    m1_sums = sorted(m1_sums, key=lambda tup: tup[0])
+    m2_sums = sorted(m2_sums, key=lambda tup: tup[0])
+
+    layers_rank_m1 = {}
+    layers_rank_m2 = {}
+
+    for i in range(len(m1_sums)):
+        layers_rank_m1[m1_sums[1]] = i+1
+        layers_rank_m2[m1_sums[1]] = i+1
+
+
     it = zip(sd_model1_unmerged,sd_model1, sd_model2)
 
+    print(m1_sums)
+    print(m2_sums)
+
+    print(layers_rank_m1)
+    print(layers_rank_m2)
 
     for ((n,v1),(_,v2), (_,v3)) in it:
         if 'query_key_value.weight' in n or 'dense_h_to_4h.weight' in n or 'dense_4h_to_h.weight' in n:
             # COMPARE DELTA AND MERGE NEXT 2 MATRICES (LORA ADAPTERS)
 
-            delta_1 = torch.sum(torch.abs(v2-v1))
-            delta_2 = torch.sum(torch.abs(v3-v1))
+            p = layers_rank_m1[n] / (layers_rank_m1[n] + layers_rank_m2[n])
 
-            print(n)
-            print(f"delta 1 {delta_1}")
-            print(f"delta 2 {delta_2}")
-
-            if delta_1 >= delta_2:
-                p = 0.9
-            else:
-                p = 0.1
+            print("rank m1", layers_rank_m1[n])
+            print("rank m2", layers_rank_m2[n])
 
             ((n,v1),(_,v2), (_,v3)) = next(it)
             print(f"merging {n} p={p}")
             v1.mul_(p)
-            v1.add_(v3 * p)
+            v1.add_(v3 * (1 - p))
 
             ((n,v1),(_,v2), (_,v3)) = next(it)
             print(f"merging {n} p={p}")
             v1.mul_(p)
-            v1.add_(v3 * p)
-
-        print("merged")
+            v1.add_(v3 * (1 - p))
+            print()
+    print("merged")
 
     if not os.path.exists(args.save_path):
         os.makedirs(args.save_path)
