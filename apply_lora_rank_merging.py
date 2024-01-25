@@ -66,6 +66,8 @@ def main():
 
             print("rank m1", layers_rank_m1[n])
             print("rank m2", layers_rank_m2[n])
+            print("merging layer {n} p={p}")
+            print()
 
             v2.mul_(p)
             v2.add_(v3 * (1 - p))
