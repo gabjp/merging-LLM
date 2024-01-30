@@ -39,8 +39,8 @@ def main():
             m1_means.append((delta_1,n))
             m2_means.append((delta_2,n))
 
-    m1_total = sum(m1_means)
-    m2_total = sum(m2_means)
+    m1_total = sum([t[0] for t in m1_means])
+    m2_total = sum([t[0] for t in m2_means])
 
     layers_contribution_m1 = {}
     layers_contribution_m2 = {}
