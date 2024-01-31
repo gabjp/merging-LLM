@@ -64,7 +64,7 @@ def main():
             print(f"merging layer {n} p={p}")
             print()
 
-            mask = torch.rand(v2.size()) < args.p
+            mask = torch.rand(v2.size()) < p
             v2.mul_(mask)
             v2.add_((~mask) * v3)
 
