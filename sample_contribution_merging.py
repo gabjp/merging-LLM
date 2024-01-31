@@ -65,8 +65,8 @@ def main():
             print()
 
             mask = torch.rand(v2.size()) < p
-            t1 = (v2-v1) * mask * 1/p
-            t2 = (v3-v1) * ~mask * 1/(1-p)
+            t1 = (v2-v1) * mask 
+            t2 = (v3-v1) * ~mask 
             v1.add_(t1)
             v1.add_(t2)
 
