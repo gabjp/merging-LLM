@@ -65,8 +65,10 @@ def main():
             print()
 
             mask = torch.rand(v2.size()) < p
-            v2.mul_(mask)
-            v2.add_((~mask) * v3)
+            t1 = (v2-v1) * mask * 1/p
+            t2 = (v3-v1) * ~mask * 1/(1-p)
+            v1.add_(t1)
+            v1.add_(t2)
 
     print("merged")
 
@@ -74,7 +76,7 @@ def main():
         os.makedirs(args.save_path)
 
     tokenizer.save_pretrained(args.save_path)
-    model1.save_pretrained(args.save_path)
+    base.save_pretrained(args.save_path)
 
 
 
