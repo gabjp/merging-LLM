@@ -34,16 +34,16 @@ def main():
 
     for ((n,v1),(_,v2), (_,v3)) in zip(sd_base, sd_model1, sd_model2):
 
+        delta_1 = torch.mean(torch.abs(v2-v1))
+        delta_2 = torch.mean(torch.abs(v3-v1))
+
         layer_name = n.split(".")
-        if v2==v3==v1:
+        if delta_1 == delta_2 == 0:
             print(f"skipping layer {n}")
             continue
         print(f"computing rank for layer {n}")
 
         layer_num = int(layer_name[2])
-
-        delta_1 = torch.mean(torch.abs(v2-v1))
-        delta_2 = torch.mean(torch.abs(v3-v1))
 
         m1_sums[layer_num].append((delta_1,n))
         m2_sums[layer_num].append((delta_2,n))
