@@ -12,6 +12,7 @@ def main():
     parser.add_argument("--m2", type=str, default="")
     parser.add_argument("--llama-path", type=str, default="meta-llama/Llama-2-7b-hf")
     parser.add_argument("--save-path", type=str, default="")
+    parser.add_argument("--mask-rate", type=float, default=0.9)
     args = parser.parse_args()
 
     tokenizer = AutoTokenizer.from_pretrained(args.llama_path, use_fast=False)
@@ -36,10 +37,10 @@ def main():
         m2_delta = sd_model2[module] - sd_base[module]
 
         mask1 = torch.bernoulli(torch.full_like(input=m1_delta, fill_value=args.mask_rate))
-        DARE_sd_model1[module] = (m1_delta * (1 - mask1)) / (1 - args.mask_rate) + sd_base[module]
+        DARE_sd_model1[module] = ((m1_delta * (1 - mask1)) / (1 - args.mask_rate)) + sd_base[module]
 
         mask2 = torch.bernoulli(torch.full_like(input=m2_delta, fill_value=args.mask_rate))
-        DARE_sd_model2[module] = (m2_delta * (1 - mask2)) / (1 - args.mask_rate) + sd_base[module]
+        DARE_sd_model2[module] = ((m2_delta * (1 - mask2)) / (1 - args.mask_rate)) + sd_base[module]
 
     model1.load_state_dict(DARE_sd_model1)
     model2.load_state_dict(DARE_sd_model2)
