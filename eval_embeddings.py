@@ -46,6 +46,8 @@ def main():
     print("Differences between the two vocabs:")
     print(differences)
 
+    return
+
     #compute distances between models
 
     t1 = sd1["model.embed_tokens.weight"][0:32000,:]
