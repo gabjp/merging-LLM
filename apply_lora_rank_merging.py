@@ -14,14 +14,16 @@ def main():
     parser.add_argument("--save-path", type=str, default="")
     args = parser.parse_args()
 
-    tokenizer = AutoTokenizer.from_pretrained(args.llama_path, use_fast=False)
+    #tokenizer = AutoTokenizer.from_pretrained(args.llama_path, use_fast=False)
 
-    llama1 = AutoModelForCausalLM.from_pretrained(args.llama_path)
-    llama2 = AutoModelForCausalLM.from_pretrained(args.llama_path)
+    #llama1 = AutoModelForCausalLM.from_pretrained(args.llama_path)
+    #llama2 = AutoModelForCausalLM.from_pretrained(args.llama_path)
     base = AutoModelForCausalLM.from_pretrained(args.llama_path)
+    model1 = AutoModelForCausalLM.from_pretrained(args.m1)
+    model2 = AutoModelForCausalLM.from_pretrained(args.m2)
 
-    model1 = PeftModel.from_pretrained(llama1, args.m1).merge_and_unload()
-    model2 = PeftModel.from_pretrained(llama2, args.m2).merge_and_unload()
+    #model1 = PeftModel.from_pretrained(llama1, args.m1).merge_and_unload()
+    #model2 = PeftModel.from_pretrained(llama2, args.m2).merge_and_unload()
 
 
     sd_base = list(base.named_parameters())
