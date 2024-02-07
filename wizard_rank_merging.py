@@ -31,6 +31,7 @@ def main():
     m2_sums = []
 
     for ((n,v1),(_,v2), (_,v3)) in zip(sd_base, sd_model1, sd_model2):
+        print(f"computing rank for layer {n}")
 
         if n == "model.embed_tokens.weight":
             delta_1 = torch.sum(torch.abs(v2[:-1]-v1))
