@@ -31,11 +31,16 @@ def main():
     m2_sums = []
 
     for ((n,v1),(_,v2), (_,v3)) in zip(sd_base, sd_model1, sd_model2):
-        delta_1 = torch.sum(torch.abs(v2-v1))
-        delta_2 = torch.sum(torch.abs(v3-v1))
-        if delta_1 != 0 and delta_2 != 0:
-            m1_sums.append((delta_1,n))
-            m2_sums.append((delta_2,n))
+
+        if n == "model.embed_tokens.weight":
+            delta_1 = torch.sum(torch.abs(v2[:-1]-v1))
+            delta_2 = torch.sum(torch.abs(v3[:-1]-v1))
+        else:
+            delta_1 = torch.sum(torch.abs(v2-v1))
+            delta_2 = torch.sum(torch.abs(v3-v1))
+        
+        m1_sums.append((delta_1,n))
+        m2_sums.append((delta_2,n))
     
     print(len(m1_sums))
 
@@ -58,24 +63,23 @@ def main():
     it = zip(sd_base, sd_model1, sd_model2)
 
     for ((n,v1),(_,v2), (_,v3)) in it:
-        if 'query_key_value.weight' in n or 'dense_h_to_4h.weight' in n or 'dense_4h_to_h.weight' in n:
 
-            p = layers_rank_m1[n] / (layers_rank_m1[n] + layers_rank_m2[n])
+        p = layers_rank_m1[n] / (layers_rank_m1[n] + layers_rank_m2[n])
 
-            print("rank m1", layers_rank_m1[n])
-            print("rank m2", layers_rank_m2[n])
-            print(f"merging layer {n} p={p}")
-            print()
+        print("rank m1", layers_rank_m1[n])
+        print("rank m2", layers_rank_m2[n])
+        print(f"merging layer {n} p={p}")
+        print()
 
-            v2.mul_(p)
-            v2.add_(v3 * (1 - p))
+        v2.mul_(p)
+        v2.add_(v3 * (1 - p))
 
     print("merged")
 
     if not os.path.exists(args.save_path):
         os.makedirs(args.save_path)
 
-    tokenizer.save_pretrained(args.save_path)
+    tokenizer1.save_pretrained(args.save_path)
     model1.save_pretrained(args.save_path)
 
 
