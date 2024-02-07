@@ -33,7 +33,7 @@ def main():
     for ((n,v1),(_,v2), (_,v3)) in zip(sd_base, sd_model1, sd_model2):
         print(f"computing rank for layer {n}")
 
-        if n == "model.embed_tokens.weight":
+        if n == "model.embed_tokens.weight" or n == "lm_head.weight":
             delta_1 = torch.sum(torch.abs(v2[:-1]-v1))
             delta_2 = torch.sum(torch.abs(v3[:-1]-v1))
         else:
