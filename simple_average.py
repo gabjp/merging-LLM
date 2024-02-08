@@ -40,7 +40,7 @@ def main():
         os.makedirs(args.save_path)
 
     
-    tokenizer2.save_pretrained(args.save_path)
+    tokenizer1.save_pretrained(args.save_path)
     model1.save_pretrained(args.save_path)
 
 
