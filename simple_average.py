@@ -14,10 +14,10 @@ def main():
     args = parser.parse_args()
 
     tokenizer1 = AutoTokenizer.from_pretrained(args.m1, use_fast=False)
-    model1 = AutoModelForCausalLM.from_pretrained(args.m1)
+    model1 = AutoModelForCausalLM.from_pretrained(args.m1, do_sample=True)
 
     tokenizer2 = AutoTokenizer.from_pretrained(args.m2, use_fast=False)
-    model2 = AutoModelForCausalLM.from_pretrained(args.m2)
+    model2 = AutoModelForCausalLM.from_pretrained(args.m2, do_sample=True)
 
 
     sd1 = model1.named_parameters()
