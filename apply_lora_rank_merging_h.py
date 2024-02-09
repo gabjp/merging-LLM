@@ -81,8 +81,8 @@ def main():
                 print("using base")
                 update = 0
             else:
-                print(f"merging layer {n} p={p}")
                 p = layers_rank_m1[n] / (layers_rank_m1[n] + layers_rank_m2[n])
+                print(f"merging layer {n} p={p}")
                 update = p * delta_1 + (1-p) * delta_2
             
             v1.add_(update)
