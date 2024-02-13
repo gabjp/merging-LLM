@@ -45,8 +45,8 @@ def main():
 
         layer_num = int(layer_name[2])
 
-        delta_1 = torch.sum(torch.abs(v2-v1))
-        delta_2 = torch.sum(torch.abs(v3-v1))
+        delta_1 = torch.mean(torch.abs(v2-v1))
+        delta_2 = torch.mean(torch.abs(v3-v1))
         
         m1_sums[layer_num] += delta_1
         m2_sums[layer_num] += delta_2
@@ -54,8 +54,8 @@ def main():
     m1_sums = [(m1_sums[i], i) for i in range(32)]
     m2_sums = [(m2_sums[i], i) for i in range(32)]
 
-    m1_sums = sorted(m1_sums, key=lambda tup: tup[0])
-    m2_sums = sorted(m2_sums, key=lambda tup: tup[0])
+    m1_sums = sorted(m1_sums, key=lambda tup: tup[0], reverse=True) # REVERSED
+    m2_sums = sorted(m2_sums, key=lambda tup: tup[0], reverse=True) # REVERSED
 
     layers_rank_m1 = {}
     layers_rank_m2 = {}
@@ -79,7 +79,7 @@ def main():
             layer_name = n.split(".")
             layer_num = int(layer_name[2])
 
-            p = layers_rank_m1[layer_num] / (layers_rank_m1[layer_num] + layers_rank_m2[layer_num])
+            p = layers_rank_m2[layer_num] / (layers_rank_m1[layer_num] + layers_rank_m2[layer_num]) ## REVERSED
 
             print("rank m1", layers_rank_m1[layer_num])
             print("rank m2", layers_rank_m2[layer_num])
