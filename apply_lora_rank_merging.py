@@ -33,8 +33,8 @@ def main():
     m2_sums = []
 
     for ((n,v1),(_,v2), (_,v3)) in zip(sd_base, sd_model1, sd_model2):
-        delta_1 = torch.sum(torch.abs(v2-v1))
-        delta_2 = torch.sum(torch.abs(v3-v1))
+        delta_1 = torch.mean(torch.abs(v2-v1))
+        delta_2 = torch.mean(torch.abs(v3-v1))
         if delta_1 != 0 and delta_2 != 0:
             m1_sums.append((delta_1,n))
             m2_sums.append((delta_2,n))
