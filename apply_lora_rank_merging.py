@@ -33,16 +33,16 @@ def main():
     m2_sums = []
 
     for ((n,v1),(_,v2), (_,v3)) in zip(sd_base, sd_model1, sd_model2):
-        delta_1 = torch.mean(torch.abs(v2-v1))
-        delta_2 = torch.mean(torch.abs(v3-v1))
+        delta_1 = torch.sum(torch.abs(v2-v1))
+        delta_2 = torch.sum(torch.abs(v3-v1))
         if delta_1 != 0 and delta_2 != 0:
             m1_sums.append((delta_1,n))
             m2_sums.append((delta_2,n))
     
     print(len(m1_sums))
 
-    m1_sums = sorted(m1_sums, key=lambda tup: tup[0])
-    m2_sums = sorted(m2_sums, key=lambda tup: tup[0])
+    m1_sums = sorted(m1_sums, key=lambda tup: tup[0], reverse=True)
+    m2_sums = sorted(m2_sums, key=lambda tup: tup[0], reverse=True)
 
     layers_rank_m1 = {}
     layers_rank_m2 = {}
@@ -62,7 +62,7 @@ def main():
     for ((n,v1),(_,v2), (_,v3)) in it:
         if 'query_key_value.weight' in n or 'dense_h_to_4h.weight' in n or 'dense_4h_to_h.weight' in n:
 
-            p = layers_rank_m1[n] / (layers_rank_m1[n] + layers_rank_m2[n])
+            p = layers_rank_m2[n] / (layers_rank_m1[n] + layers_rank_m2[n])
 
             print("rank m1", layers_rank_m1[n])
             print("rank m2", layers_rank_m2[n])
