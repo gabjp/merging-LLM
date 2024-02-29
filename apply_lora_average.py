@@ -29,7 +29,7 @@ def main():
     if args.m3 != "":
         llama3 = AutoModelForCausalLM.from_pretrained(args.llama_path)
         model3 = PeftModel.from_pretrained(llama3, args.m3).merge_and_unload()
-        sd3 = model3.named_parametes()
+        sd3 = model3.named_parameters()
 
         for ((name1,val1),(name2,val2), (name3,val3)) in zip(sd1, sd2, sd3):
             print(f"merging {name1}")
