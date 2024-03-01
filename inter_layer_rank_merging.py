@@ -95,8 +95,10 @@ def main():
     print()
     print(layers_rank_m2)
     if args.m3 != "":
+        print(m3_sums)
         print()
         print(layers_rank_m3)
+        print()
 
 
     it = zip(sd_base, sd_model1, sd_model2, sd_model3)
@@ -125,7 +127,7 @@ def main():
                 print("rank m1", layers_rank_m1[layer_num])
                 print("rank m2", layers_rank_m2[layer_num])
                 print("rank m3", layers_rank_m3[layer_num])
-                print(f"merging layer {n} p={p}")
+                print(f"merging layer {n} p1={p1}, p2={p2}, p3={p3}")
                 print()
 
                 v2.mul_(p1)
