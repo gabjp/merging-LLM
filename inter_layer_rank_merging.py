@@ -28,7 +28,7 @@ def main():
     sd_base = list(base.named_parameters())
     sd_model1 = list(model1.named_parameters())
     sd_model2 = list(model2.named_parameters())
-    sd_model3 = [(None, None) for _ in len(sd_base)]
+    sd_model3 = [(None, None) for _ in len(len(sd_base))]
 
 
     m1_sums = [ 0 for i in range(32) ]
